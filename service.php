@@ -150,6 +150,26 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 	$response['code'] = 1;
 	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
 	$response['data'] = 'Hello World';
+} else if ( strcasecmp($_GET['method'],'events') == 0)) {
+	$response['code'] = 1;
+	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
+	
+	$server = "us-cdbr-iron-east-03.cleardb.net";
+  	$username = "b89bd9df8706e4";
+  	$password = "9e505464";
+  	$db = "heroku_372223b9430a291";
+  	$conn = mysql_connect($server, $username, $password);
+  	mysql_select_db($db);
+
+  	$sql = "";
+	if($_GET['action'] == 1) { 
+  		$sql = "SELECT id,event_name,url,date,location FROM events JOIN companies_events ON events.id = companies_events.company_id WHERE company_id=".$_GET['company_id'].";";
+  	}
+  	else if ($_GET['method'] == 2) {
+		$sql = "SELECT id,event_name,url,date,location FROM events JOIN freelancers_events ON events.id = freelancers_events.freelancer_id WHERE freelancer_id=".$_GET['freelancer_id'].";";
+  	}
+
+	$response['data'] = 'Hello World';
 }
 
 // --- Step 4: Deliver Response
