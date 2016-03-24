@@ -287,14 +287,14 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    
    	if(! $retval ) {
       //die('Could not enter data: ' . mysql_error());
-   		$response['data'] = "error, email already exists";   		
+   		$response['data'] = "error, email already exists. ".$retval;   		
    	} else {
    		$response['data'] = json_encode($retval);
    	}
 
 	mysql_close($conn);
 } else if ( strcasecmp($_GET['method'],'attending') == 0) {
-	
+
 }
 
 // --- Step 4: Deliver Response
