@@ -216,15 +216,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
  
  	//create an array
- 	$output = mysql_fetch_array($retval);
-    /*$output = array();
+ 	//$output = mysql_fetch_array($retval);
+    $output = array();
     $counter = 0;
-    while($row =mysql_fetch_row($retval))
+    while($row =mysql_fetch_array($retval))
     {
         $output[$counter] = $row;
         $counter++;
     }
-*/
+
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
@@ -255,15 +255,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
  
  	//create an array
-    $output = mysql_fetch_array($retval);
-    /*$output = array();
+    //$output = mysql_fetch_array($retval);
+    $output = array();
     $counter = 0;
-    while($row =mysql_fetch_row($retval))
+    while($row =mysql_fetch_array($retval))
     {
         $output[$counter] = $row;
         $counter++;
     }
-*/
+
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
@@ -313,6 +313,7 @@ $response['code'] = 1;
   		//check if record exists
 		$sql = "SELECT * FROM companies_events WHERE company_id='".$_POST['company_id']."' AND event_id='".$_POST['event_id']."'";
 		$retval = mysql_query( $sql, $conn );
+		
 		if(!$retval) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES ('".$_POST['company_id']."', '".$_POST['event_id']."')";
@@ -338,11 +339,11 @@ $response['code'] = 1;
 		}
   	} 
     
-   	if(!$retval) {
+   	if(!$retval2) {
       //die('Could not enter data: ' . mysql_error());
    		$response['data'] = "error, data is wrong.";//.$retval."-".mysql_error();   		
    	} else {
-   		$response['data'] = "output - ".$retval;
+   		$response['data'] = "output - ".$retval."-".$retval2;
    	}
 
 	mysql_close($conn);
