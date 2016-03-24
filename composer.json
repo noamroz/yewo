@@ -1,0 +1,14 @@
+{
+    "name": "yewo",
+    "require": {
+        "php": "*",
+        "ext-mysqli": "*",
+        "ext-mysql": "*"
+    },
+    "authors": [
+        {
+            "name": "levimatan",
+            "email": "levimatan@gmail.com"
+        }
+    ]
+}
