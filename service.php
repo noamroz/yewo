@@ -150,7 +150,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 	$response['code'] = 1;
 	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
 	$response['data'] = 'Hello World';
-} else if ( strcasecmp($_GET['method'],'events') == 0)) {
+} else if ( strcasecmp($_GET['method'],'events') == 0) {
 	$response['code'] = 1;
 	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
 	
