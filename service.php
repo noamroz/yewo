@@ -187,7 +187,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
-	$response['data'] = json_encode($output);
+	$response['data'] = $output;//json_encode($output);
 } else if ( strcasecmp($_GET['method'],'users') == 0) {
 	$response['code'] = 1;
 	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
@@ -225,7 +225,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
-	$response['data'] = json_encode($output);
+	$response['data'] = $output;//json_encode($output);
 } else if ( strcasecmp($_GET['method'],'login') == 0) {
 	$response['code'] = 1;
 	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
