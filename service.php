@@ -174,15 +174,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	if(! $retval ) {
       die('Could not enter data: ' . mysql_error());
    	}
-
-	mysql_close($conn);
-	
-	 //create an array
+ 
+ 	//create an array
     $output = array();
     while($row =mysqli_fetch_assoc($retval))
     {
         $output[] = $row;
     }
+
+	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
 	$response['data'] = json_encode($output);
