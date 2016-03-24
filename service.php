@@ -177,9 +177,11 @@ if( strcasecmp($_GET['method'],'hello') == 0){
  
  	//create an array
     $output = array();
+    $counter = 0;
     while($row =mysql_fetch_array($retval))
     {
-        $output[] = $row;
+        $output[$counter] = $row;
+        $counter++;
     }
 
 	mysql_close($conn);
