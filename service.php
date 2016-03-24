@@ -176,7 +176,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
 
 	mysql_close($conn);
-
+	die('Could not enter data: ' . $retval);
 	$response['data'] = $retval;
 }
 
