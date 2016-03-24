@@ -215,14 +215,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
  
  	//create an array
-    $output = array();
+ 	$output = mysql_fetch_array($retval);
+    /*$output = array();
     $counter = 0;
     while($row =mysql_fetch_row($retval))
     {
         $output[$counter] = $row;
         $counter++;
     }
-
+*/
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
@@ -253,14 +254,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
  
  	//create an array
-    $output = array();
+    $output = mysql_fetch_array($retval);
+    /*$output = array();
     $counter = 0;
     while($row =mysql_fetch_row($retval))
     {
         $output[$counter] = $row;
         $counter++;
     }
-
+*/
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
