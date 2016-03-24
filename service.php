@@ -239,10 +239,10 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
   	$sql = "";
 	if($_GET['action'] == 1) { 
-  		$sql = "SELECT id,email,company_name,website,signup_date FROM companies WHERE email=".$_POST['email']." AND password=".$_POST['password'];
+  		$sql = "SELECT id,email,company_name,website,signup_date FROM companies WHERE email='".$_POST['email']."' AND password='".$_POST['password']."'";
   	}
   	else if ($_GET['action'] == 2) {
-		$sql = "SELECT id,email,full_name,linkedin,signup_date FROM freelancers WHERE email=".$_POST['email']." AND password=".$_POST['password'];
+		$sql = "SELECT id,email,full_name,linkedin,signup_date FROM freelancers WHERE email='".$_POST['email']."' AND password='".$_POST['password']."'";
   	} 
 
 	$retval = mysql_query( $sql, $conn );
