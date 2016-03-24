@@ -176,8 +176,16 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
 
 	mysql_close($conn);
+	
+	 //create an array
+    $output = array();
+    while($row =mysqli_fetch_assoc($retval))
+    {
+        $output[] = $row;
+    }
+
 	die('Could not enter data: ' . $retval);
-	$response['data'] = $retval;
+	$response['data'] = json_encode($output);
 }
 
 // --- Step 4: Deliver Response
