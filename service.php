@@ -187,7 +187,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
-	$response['data'] = $output;//json_encode($output);
+	$response['data'] = json_encode($output);
 } else if ( strcasecmp($_GET['method'],'users') == 0) {
 	$response['code'] = 1;
 	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
@@ -216,7 +216,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
  	//create an array
     $output = array();
     $counter = 0;
-    while($row =mysql_fetch_array($retval))
+    while($row =mysql_fetch_row($retval))
     {
         $output[$counter] = $row;
         $counter++;
