@@ -165,7 +165,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 	if($_GET['action'] == 1) { 
   		$sql = "SELECT id,event_name,url,date,location FROM events JOIN companies_events ON events.id = companies_events.company_id WHERE company_id=".$_GET['id'];
   	}
-  	else if ($_GET['method'] == 2) {
+  	else if ($_GET['action'] == 2) {
 		$sql = "SELECT id,event_name,url,date,location FROM events JOIN freelancers_events ON events.id = freelancers_events.freelancer_id WHERE freelancer_id=".$_GET['id'];
   	}
 
