@@ -180,7 +180,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
     $output = array();//mysql_fetch_array($retval); //array();
     
     $counter = 0;
-    while($row =mysql_fetch_row($retval))
+    while($row =mysql_fetch_array($retval))
     {
         $output[$counter] = $row;
         $counter++;
