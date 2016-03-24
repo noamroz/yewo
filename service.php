@@ -177,15 +177,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
  
  	//create an array
-    $output = mysql_fetch_array($retval); //array();
-    /*
+    $output = array();//mysql_fetch_array($retval); //array();
+    
     $counter = 0;
     while($row =mysql_fetch_row($retval))
     {
         $output[$counter] = $row;
         $counter++;
     }
-*/
+
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
