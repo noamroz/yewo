@@ -176,14 +176,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	}
  
  	//create an array
-    $output = array();
+    $output = mysql_fetch_array($retval); //array();
+    /*
     $counter = 0;
     while($row =mysql_fetch_row($retval))
     {
         $output[$counter] = $row;
         $counter++;
     }
-
+*/
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
@@ -254,7 +255,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
  	//create an array
     $output = array();
     $counter = 0;
-    while($row =mysql_fetch_array($retval))
+    while($row =mysql_fetch_row($retval))
     {
         $output[$counter] = $row;
         $counter++;
@@ -294,7 +295,54 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
 	mysql_close($conn);
 } else if ( strcasecmp($_GET['method'],'attending') == 0) {
+$response['code'] = 1;
+	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
+	
+	$server = "us-cdbr-iron-east-03.cleardb.net";
+  	$username = "b89bd9df8706e4";
+  	$password = "9e505464";
+  	$db = "heroku_372223b9430a291";
+  	$conn = mysql_connect($server, $username, $password);
+  	mysql_select_db($db);
 
+  	$sql = "";
+	if($_GET['action'] == 1) { 
+  		//check if record exists
+		$sql = "SELECT * FROM companies_events WHERE company_id='".$_POST['company_id']."' AND event_id='".$_POST['event_id']."'";
+		$retval = mysql_query( $sql, $conn );
+		if(!$retval) {
+			//add record
+			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES ('".$_POST['company_id']."', '".$_POST['event_id']."')";
+			$retval2 = mysql_query( $sql, $conn );
+		} else {
+			//remove record
+			$sql = "DELETE FROM companies_events WHERE company_id='".$_POST['company_id']."' AND event_id='".$_POST['event_id']."'";
+			$retval2 = mysql_query( $sql, $conn );
+		}
+  	}
+  	else if ($_GET['action'] == 2) {
+		//check if record exists
+		$sql = "SELECT * FROM freelancers_events WHERE freelancer_id='".$_POST['freelancer_id']."' AND event_id='".$_POST['event_id']."'";
+		$retval = mysql_query( $sql, $conn );
+		if(!$retval) {
+			//add record
+			$sql = "INSERT INTO freelancers_events (freelancer_id, event_id) VALUES ('".$_POST['freelancer_id']."', '".$_POST['event_id']."')";
+			$retval2 = mysql_query( $sql, $conn );
+		} else {
+			//remove record
+			$sql = "DELETE FROM freelancers_events WHERE freelancer_id='".$_POST['freelancer_id']."' AND event_id='".$_POST['event_id']."'";
+			$retval2 = mysql_query( $sql, $conn );
+		}
+  	} 
+    
+   	if(!$retval) {
+      //die('Could not enter data: ' . mysql_error());
+   		$response['data'] = "error, data is wrong.";//.$retval."-".mysql_error();   		
+   	} else {
+   		$response['data'] = "output - ".$retval;
+   	}
+
+	mysql_close($conn);
 }
 
 // --- Step 4: Deliver Response
