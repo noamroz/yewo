@@ -169,7 +169,15 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 		$sql = "SELECT id,event_name,url,date,location FROM events JOIN freelancers_events ON events.id = freelancers_events.freelancer_id WHERE freelancer_id=".$_GET['freelancer_id'].";";
   	}
 
-	$response['data'] = 'Hello World';
+	$retval = mysql_query( $sql, $conn );
+   
+   	if(! $retval ) {
+      die('Could not enter data: ' . mysql_error());
+   	}
+
+	mysql_close($conn);
+
+	$response['data'] = $retval;
 }
 
 // --- Step 4: Deliver Response
