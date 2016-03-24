@@ -226,6 +226,44 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
 	//die('Could not enter data: ' . $retval);
 	$response['data'] = json_encode($output);
+} else if ( strcasecmp($_GET['method'],'login') == 0) {
+	$response['code'] = 1;
+	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
+	
+	$server = "us-cdbr-iron-east-03.cleardb.net";
+  	$username = "b89bd9df8706e4";
+  	$password = "9e505464";
+  	$db = "heroku_372223b9430a291";
+  	$conn = mysql_connect($server, $username, $password);
+  	mysql_select_db($db);
+
+  	$sql = "";
+	if($_GET['action'] == 1) { 
+  		$sql = "SELECT id,email,company_name,website,signup_date FROM companies WHERE email=".$_POST['email']." AND password=".$_POST['password'];
+  	}
+  	else if ($_GET['action'] == 2) {
+		$sql = "SELECT id,email,full_name,linkedin,signup_date FROM freelancers WHERE email=".$_POST['email']." AND password=".$_POST['password'];
+  	} 
+
+	$retval = mysql_query( $sql, $conn );
+   
+   	if(! $retval ) {
+      die('Could not enter data: ' . mysql_error());
+   	}
+ 
+ 	//create an array
+    $output = array();
+    $counter = 0;
+    while($row =mysql_fetch_array($retval))
+    {
+        $output[$counter] = $row;
+        $counter++;
+    }
+
+	mysql_close($conn);
+
+	//die('Could not enter data: ' . $retval);
+	$response['data'] = json_encode($output);
 } 
 
 // --- Step 4: Deliver Response
