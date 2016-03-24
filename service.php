@@ -264,6 +264,34 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
 	//die('Could not enter data: ' . $retval);
 	$response['data'] = json_encode($output);
+} else if ( strcasecmp($_GET['method'],'signup') == 0) {
+	$response['code'] = 1;
+	$response['status'] = $api_response_code[ $response['code'] ]['HTTP Response'];
+	
+	$server = "us-cdbr-iron-east-03.cleardb.net";
+  	$username = "b89bd9df8706e4";
+  	$password = "9e505464";
+  	$db = "heroku_372223b9430a291";
+  	$conn = mysql_connect($server, $username, $password);
+  	mysql_select_db($db);
+
+  	$sql = "";
+	if($_GET['action'] == 1) { 
+  		$sql = "INSERT INTO companies (email,company_name,website) VALUES ('".$_POST['email']."','".$_POST['company_name']."','".$_POST['website']."''".$_POST['password']."')";
+  	}
+  	else if ($_GET['action'] == 2) {
+		  $sql = "INSERT INTO freelancers (email,full_name,linkedin) VALUES ('".$_POST['email']."','".$_POST['full_name']."','".$_POST['linkedin']."''".$_POST['password']."')";
+  	} 
+
+	$retval = mysql_query( $sql, $conn );
+   
+   	if(! $retval ) {
+      die('Could not enter data: ' . mysql_error());
+   	}
+
+	mysql_close($conn);
+
+	$response['data'] = json_encode($retval);
 } 
 
 // --- Step 4: Deliver Response
