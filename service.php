@@ -287,7 +287,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
     
    	if(is_null($retval)) {
       //die('Could not enter data: ' . mysql_error());
-   		$response['data'] = "error, email already exists. ".$retval;   		
+   		$response['data'] = "error, email already exists. ".$retval."-".mysql_error();   		
    	} else {
    		$response['data'] = json_encode($retval);
    	}
