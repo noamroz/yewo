@@ -184,7 +184,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
         $output[] = $row;
     }
 
-	die('Could not enter data: ' . $retval);
+	//die('Could not enter data: ' . $retval);
 	$response['data'] = json_encode($output);
 }
 
