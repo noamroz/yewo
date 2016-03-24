@@ -201,10 +201,10 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
   	$sql = "";
 	if($_GET['action'] == 1) { 
-  		$sql = "SELECT id,email,company_name,website,signup_date FROM companies JOIN companies_events ON events.id = companies_events.company_id WHERE event_id=".$_GET['id'];
+  		$sql = "SELECT id,email,company_name,website,signup_date FROM companies JOIN companies_events ON companies.id = companies_events.company_id WHERE event.id=".$_GET['id'];
   	}
   	else if ($_GET['action'] == 2) {
-		$sql = "SELECT id,email,full_name,linkedin,signup_date FROM freelancers JOIN freelancers_events ON events.id = freelancers_events.freelancer_id WHERE event_id=".$_GET['id'];
+		$sql = "SELECT id,email,full_name,linkedin,signup_date FROM freelancers JOIN freelancers_events ON freelancers.id = freelancers_events.freelancer_id WHERE event.id=".$_GET['id'];
   	} 
 
 	$retval = mysql_query( $sql, $conn );
@@ -226,7 +226,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
 	//die('Could not enter data: ' . $retval);
 	$response['data'] = json_encode($output);
-}
+} 
 
 // --- Step 4: Deliver Response
 
