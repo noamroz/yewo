@@ -277,10 +277,10 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
   	$sql = "";
 	if($_GET['action'] == 1) { 
-  		$sql = "INSERT INTO companies (email,company_name,website,password) VALUES ('".$_POST['email']."','".$_POST['company_name']."','".$_POST['website']."''".$_POST['password']."')";
+  		$sql = "INSERT INTO companies (email,company_name,website,password) VALUES ('".$_POST['email']."','".$_POST['company_name']."','".$_POST['website']."','".$_POST['password']."')";
   	}
   	else if ($_GET['action'] == 2) {
-		  $sql = "INSERT INTO freelancers (email,full_name,linkedin,password) VALUES ('".$_POST['email']."','".$_POST['full_name']."','".$_POST['linkedin']."''".$_POST['password']."')";
+		$sql = "INSERT INTO freelancers (email,full_name,linkedin,password) VALUES ('".$_POST['email']."','".$_POST['full_name']."','".$_POST['linkedin']."','".$_POST['password']."')";
   	} 
 
 	$retval = mysql_query( $sql, $conn );
