@@ -177,7 +177,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
  
  	//create an array
     $output = array();
-    while($row =mysqli_fetch_assoc($retval))
+    while($row =mysql_fetch_array($retval))
     {
         $output[] = $row;
     }
