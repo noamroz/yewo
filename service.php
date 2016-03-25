@@ -183,6 +183,24 @@ if( strcasecmp($_GET['method'],'hello') == 0){
     while($row =mysql_fetch_array($retval))
     {
         $output[$counter] = $row;
+        $sql2="";
+        if($_GET['action'] == 1) { 
+        	$sql2 = "SELECT COUNT(*) AS total FROM companies_events WHERE event_id=".$row->id." AND company_id=".$_GET['company_id'];
+        }
+        else if ($_GET['action'] == 2) {
+			$sql2 = "SELECT COUNT(*) AS total FROM freelancer_events WHERE event_id=".$row->id." AND freelancer_id=".$_GET['freelancer_id'];
+        }
+        $retval2 = mysql_query( $sql2, $conn );
+        $values = mysql_fetch_assoc($retval2);
+		$num_rows = $values['total'];
+		if($num_rows!=0)
+		{
+			$row->attending = "true";
+		} 
+		else 
+		{
+			$row->attending = "false";	
+		}
         $counter++;
     }
 
