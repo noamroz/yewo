@@ -313,7 +313,6 @@ $response['code'] = 1;
   		//check if record exists
 		$sql = "SELECT * FROM companies_events WHERE company_id=".$_POST['company_id']." AND event_id=".$_POST['event_id']."";
 		$retval = mysql_query( $sql, $conn );
-					die($sql);
 		if(!$retval) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
