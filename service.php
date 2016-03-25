@@ -307,7 +307,7 @@ $response['code'] = 1;
   	$db = "heroku_372223b9430a291";
   	$conn = mysql_connect($server, $username, $password);
   	mysql_select_db($db);
-
+	mysql_free_result();
   	$sql = "";
 	if($_GET['action'] == 1) { 
   		//check if record exists
@@ -316,7 +316,7 @@ $response['code'] = 1;
 		mysql_close($conn);
 		$conn = mysql_connect($server, $username, $password);
   		mysql_select_db($db);
-
+		mysql_free_result();
 		if(!$retval) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
