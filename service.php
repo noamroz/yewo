@@ -297,7 +297,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
   	$db = "heroku_372223b9430a291";
   	$conn = mysql_connect($server, $username, $password);
   	mysql_select_db($db);
-
+	mysql_free_result();
   	$sql = "";
 	if($_GET['action'] == 1) { 
   		$sql = "INSERT INTO companies (email,company_name,website,password) VALUES ('".$_POST['email']."','".$_POST['company_name']."','".$_POST['website']."','".$_POST['password']."')";
@@ -314,7 +314,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
    	} else {
    		$response['data'] = "output - ".$retval;
    	}
-
+	mysql_free_result();
 	mysql_close($conn);
 } else if ( strcasecmp($_GET['method'],'attending') == 0) {
 $response['code'] = 1;
