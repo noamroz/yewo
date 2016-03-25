@@ -194,14 +194,14 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 		$num_rows = $values['total'];
 		if($num_rows!=0)
 		{
-			$row->attending = "true";
+			$row['attending'] = "true";
 		} 
 		else 
 		{
-			$row->attending = "false";	
+			$row['attending'] = "false";	
 		}
-
-        $output[$counter] = $row;		
+		//$record = $row;		
+        $output[$counter] = $row;
         $counter++;
     }
 
