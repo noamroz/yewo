@@ -333,7 +333,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 
         function logincheck() {
             jQuery.ajax({
-            url: 'https://yewo.herokuapp.com/service.php?format=json&method=login&action=2',
+            url: 'service.php?format=json&method=login&action=2',
             type: 'post',
             success: function (data) {
                 // if data is empty
