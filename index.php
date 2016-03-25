@@ -38,7 +38,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <link rel="shortcut icon" href="../../favicon.ico">
 
   <!-- Fonts START -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
@@ -98,10 +98,10 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <!-- BEGIN TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
-                        <li><a href="page-login-company.html"><b>Company Login </b></a></li>
-                        <li><a href="page-reg-Company.html"><b>Company Signup </b></a></li>
+                        <li><a href="page-login-company.php"><b>Company Login </b></a></li>
+                        <li><a href="page-reg-Company.php"><b>Company Signup </b></a></li>
                         <li><a href="page-login.php"><b>Freelance Login </b></a></li>
-                        <li><a href="page-reg-page.html"><b>Freelance Signup </b></a></li>
+                        <li><a href="page-reg-page.php"><b>Freelance Signup </b></a></li>
                     </ul>
                 </div>
                 <!-- END TOP BAR MENU -->
@@ -112,7 +112,7 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <!--<a class="site-logo" href="index.html"><img src="../../assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>-->
+        <!--<a class="site-logo" href="index.php"><img src="../../assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>-->
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -126,9 +126,9 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--</a>-->
 
               <!--<ul class="dropdown-menu">-->
-                <!--<li class="active"><a href="index.html">Home Default</a></li>-->
-                <!--<li><a href="index-header-fix.html">Home with Header Fixed</a></li>-->
-                <!--<li><a href="index-without-topbar.html">Home without Top Bar</a></li>-->
+                <!--<li class="active"><a href="index.php">Home Default</a></li>-->
+                <!--<li><a href="index-header-fix.php">Home with Header Fixed</a></li>-->
+                <!--<li><a href="index-without-topbar.php">Home without Top Bar</a></li>-->
               <!--</ul>-->
             <!--</li>-->
             <!--<li class="dropdown dropdown-megamenu">-->
@@ -143,41 +143,41 @@ License: You must have a valid license purchased only from themeforest (the abov
                       <!--<div class="col-md-4 header-navigation-col">-->
                         <!--<h4>Footwear</h4>-->
                         <!--<ul>-->
-                          <!--<li><a href="index.html">Astro Trainers</a></li>-->
-                          <!--<li><a href="index.html">Basketball Shoes</a></li>-->
-                          <!--<li><a href="index.html">Boots</a></li>-->
-                          <!--<li><a href="index.html">Canvas Shoes</a></li>-->
-                          <!--<li><a href="index.html">Football Boots</a></li>-->
-                          <!--<li><a href="index.html">Golf Shoes</a></li>-->
-                          <!--<li><a href="index.html">Hi Tops</a></li>-->
-                          <!--<li><a href="index.html">Indoor Trainers</a></li>-->
+                          <!--<li><a href="index.php">Astro Trainers</a></li>-->
+                          <!--<li><a href="index.php">Basketball Shoes</a></li>-->
+                          <!--<li><a href="index.php">Boots</a></li>-->
+                          <!--<li><a href="index.php">Canvas Shoes</a></li>-->
+                          <!--<li><a href="index.php">Football Boots</a></li>-->
+                          <!--<li><a href="index.php">Golf Shoes</a></li>-->
+                          <!--<li><a href="index.php">Hi Tops</a></li>-->
+                          <!--<li><a href="index.php">Indoor Trainers</a></li>-->
                         <!--</ul>-->
                       <!--</div>-->
                       <!--<div class="col-md-4 header-navigation-col">-->
                         <!--<h4>Clothing</h4>-->
                         <!--<ul>-->
-                          <!--<li><a href="index.html">Base Layer</a></li>-->
-                          <!--<li><a href="index.html">Character</a></li>-->
-                          <!--<li><a href="index.html">Chinos</a></li>-->
-                          <!--<li><a href="index.html">Combats</a></li>-->
-                          <!--<li><a href="index.html">Cricket Clothing</a></li>-->
-                          <!--<li><a href="index.html">Fleeces</a></li>-->
-                          <!--<li><a href="index.html">Gilets</a></li>-->
-                          <!--<li><a href="index.html">Golf Tops</a></li>-->
+                          <!--<li><a href="index.php">Base Layer</a></li>-->
+                          <!--<li><a href="index.php">Character</a></li>-->
+                          <!--<li><a href="index.php">Chinos</a></li>-->
+                          <!--<li><a href="index.php">Combats</a></li>-->
+                          <!--<li><a href="index.php">Cricket Clothing</a></li>-->
+                          <!--<li><a href="index.php">Fleeces</a></li>-->
+                          <!--<li><a href="index.php">Gilets</a></li>-->
+                          <!--<li><a href="index.php">Golf Tops</a></li>-->
                         <!--</ul>-->
                       <!--</div>-->
                       <!--<div class="col-md-4 header-navigation-col">-->
                         <!--<h4>Accessories</h4>-->
                         <!--<ul>-->
-                          <!--<li><a href="index.html">Belts</a></li>-->
-                          <!--<li><a href="index.html">Caps</a></li>-->
-                          <!--<li><a href="index.html">Gloves</a></li>-->
+                          <!--<li><a href="index.php">Belts</a></li>-->
+                          <!--<li><a href="index.php">Caps</a></li>-->
+                          <!--<li><a href="index.php">Gloves</a></li>-->
                         <!--</ul>-->
 
                         <!--<h4>Clearance</h4>-->
                         <!--<ul>-->
-                          <!--<li><a href="index.html">Jackets</a></li>-->
-                          <!--<li><a href="index.html">Bottoms</a></li>-->
+                          <!--<li><a href="index.php">Jackets</a></li>-->
+                          <!--<li><a href="index.php">Bottoms</a></li>-->
                         <!--</ul>-->
                       <!--</div>-->
                     <!--</div>-->
@@ -192,20 +192,20 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--</a>-->
 
               <!--<ul class="dropdown-menu">-->
-                <!--<li><a href="page-about.html">About Us</a></li>-->
-                <!--<li><a href="page-services.html">Services</a></li>-->
-                <!--<li><a href="page-prices.html">Prices</a></li>-->
-                <!--<li><a href="page-faq.html">FAQ</a></li>-->
-                <!--<li><a href="page-gallery.html">Gallery</a></li>-->
-                <!--<li><a href="page-search-result.html">Search Result</a></li>-->
-                <!--<li><a href="page-404.html">404</a></li>-->
-                <!--<li><a href="page-500.html">500</a></li>-->
-                <!--<li><a href="page-login.html">Login Page</a></li>-->
-                <!--<li><a href="page-forgotton-password.html">Forget Password</a></li>-->
-                <!--<li><a href="page-reg-page.html">Signup Page</a></li>-->
-                <!--<li><a href="page-careers.html">Careers</a></li>-->
-                <!--<li><a href="page-site-map.html">Site Map</a></li>-->
-                <!--<li><a href="page-contacts.html">Contact</a></li>-->
+                <!--<li><a href="page-about.php">About Us</a></li>-->
+                <!--<li><a href="page-services.php">Services</a></li>-->
+                <!--<li><a href="page-prices.php">Prices</a></li>-->
+                <!--<li><a href="page-faq.php">FAQ</a></li>-->
+                <!--<li><a href="page-gallery.php">Gallery</a></li>-->
+                <!--<li><a href="page-search-result.php">Search Result</a></li>-->
+                <!--<li><a href="page-404.php">404</a></li>-->
+                <!--<li><a href="page-500.php">500</a></li>-->
+                <!--<li><a href="page-login.php">Login Page</a></li>-->
+                <!--<li><a href="page-forgotton-password.php">Forget Password</a></li>-->
+                <!--<li><a href="page-reg-page.php">Signup Page</a></li>-->
+                <!--<li><a href="page-careers.php">Careers</a></li>-->
+                <!--<li><a href="page-site-map.php">Site Map</a></li>-->
+                <!--<li><a href="page-contacts.php">Contact</a></li>-->
               <!--</ul>-->
             <!--</li>-->
             <!--<li class="dropdown">-->
@@ -215,24 +215,24 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--</a>-->
 
               <!--<ul class="dropdown-menu">-->
-                <!--<li><a href="feature-typography.html">Typography</a></li>-->
-                <!--<li><a href="feature-buttons.html">Buttons</a></li>-->
-                <!--<li><a href="feature-forms.html">Forms</a></li>-->
+                <!--<li><a href="feature-typography.php">Typography</a></li>-->
+                <!--<li><a href="feature-buttons.php">Buttons</a></li>-->
+                <!--<li><a href="feature-forms.php">Forms</a></li>-->
 
                 <!--<li class="dropdown-submenu">-->
-                  <!--<a href="index.html">Multi level <i class="fa fa-angle-right"></i></a>-->
+                  <!--<a href="index.php">Multi level <i class="fa fa-angle-right"></i></a>-->
                   <!--<ul class="dropdown-menu" role="menu">-->
-                    <!--<li><a href="index.html">Second Level Link</a></li>-->
-                    <!--<li><a href="index.html">Second Level Link</a></li>-->
+                    <!--<li><a href="index.php">Second Level Link</a></li>-->
+                    <!--<li><a href="index.php">Second Level Link</a></li>-->
                     <!--<li class="dropdown-submenu">-->
                       <!--<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">-->
                         <!--Second Level Link-->
                         <!--<i class="fa fa-angle-right"></i>-->
                       <!--</a>-->
                       <!--<ul class="dropdown-menu">-->
-                        <!--<li><a href="index.html">Third Level Link</a></li>-->
-                        <!--<li><a href="index.html">Third Level Link</a></li>-->
-                        <!--<li><a href="index.html">Third Level Link</a></li>-->
+                        <!--<li><a href="index.php">Third Level Link</a></li>-->
+                        <!--<li><a href="index.php">Third Level Link</a></li>-->
+                        <!--<li><a href="index.php">Third Level Link</a></li>-->
                       <!--</ul>-->
                     <!--</li>-->
                   <!--</ul>-->
@@ -246,10 +246,10 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--</a>-->
 
               <!--<ul class="dropdown-menu">-->
-                <!--<li><a href="portfolio-4.html">Portfolio 4</a></li>-->
-                <!--<li><a href="portfolio-3.html">Portfolio 3</a></li>-->
-                <!--<li><a href="portfolio-2.html">Portfolio 2</a></li>-->
-                <!--<li><a href="portfolio-item.html">Portfolio Item</a></li>-->
+                <!--<li><a href="portfolio-4.php">Portfolio 4</a></li>-->
+                <!--<li><a href="portfolio-3.php">Portfolio 3</a></li>-->
+                <!--<li><a href="portfolio-2.php">Portfolio 2</a></li>-->
+                <!--<li><a href="portfolio-item.php">Portfolio Item</a></li>-->
               <!--</ul>-->
             <!--</li>-->
             <!--<li class="dropdown">-->
@@ -259,12 +259,12 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--</a>-->
 
               <!--<ul class="dropdown-menu">-->
-                <!--<li><a href="blog.html">Blog Page</a></li>-->
-                <!--<li><a href="blog-item.html">Blog Item</a></li>-->
+                <!--<li><a href="blog.php">Blog Page</a></li>-->
+                <!--<li><a href="blog-item.php">Blog Item</a></li>-->
               <!--</ul>-->
             <!--</li>-->
-            <!--<li><a href="shop-index.html" target="_blank">E-Commerce</a></li>-->
-            <!--<li><a href="onepage-index.html" target="_blank">One Page</a></li>-->
+            <!--<li><a href="shop-index.php" target="_blank">E-Commerce</a></li>-->
+            <!--<li><a href="onepage-index.php" target="_blank">One Page</a></li>-->
             <!--<li><a href="http://keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank">Admin theme</a></li>-->
             <li><a href="http://keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank">
 
@@ -322,7 +322,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <!--data-easing="easeOutExpo">-->
               <!--</div>-->
               <a class="caption lft btn dark slide_btn slide_item_left"
-                 href="page-reg-Company.html.html"
+                 href="page-reg-Company.php.php"
                 data-x="-200"
                 data-y="315"
                 data-speed="400"
@@ -332,7 +332,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                    Company
               </a>
               <a class="caption lft btn dark slide_btn slide_item_left"
-                 href="page-reg-page.html"
+                 href="page-reg-page.php"
                  data-x="0"
                  data-y="315"
                  data-speed="400"
@@ -636,7 +636,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         <!-- BEGIN RECENT WORKS -->
         <!--<div class="row recent-work margin-bottom-40">-->
           <!--<div class="col-md-3">-->
-            <!--<h2><a href="portfolio.html">Recent Works</a></h2>-->
+            <!--<h2><a href="portfolio.php">Recent Works</a></h2>-->
             <!--<p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde voluptatem. Sed unde omnis iste natus error sit voluptatem.</p>-->
           <!--</div>-->
           <!--<div class="col-md-9">-->
@@ -644,7 +644,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img1.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img1.jpg" class="fancybox-button" title="Project Name #1" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
@@ -655,7 +655,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img2.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img2.jpg" class="fancybox-button" title="Project Name #2" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
@@ -666,7 +666,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img3.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
@@ -677,7 +677,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img4.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img4.jpg" class="fancybox-button" title="Project Name #4" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
@@ -688,7 +688,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img5.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img5.jpg" class="fancybox-button" title="Project Name #5" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
@@ -699,7 +699,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img6.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img6.jpg" class="fancybox-button" title="Project Name #6" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
@@ -710,7 +710,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img3.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
@@ -721,7 +721,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <!--<div class="recent-work-item">-->
                 <!--<em>-->
                   <!--<img src="../../assets/frontend/pages/img/works/img4.jpg" alt="Amazing Project" class="img-responsive">-->
-                  <!--<a href="portfolio-item.html"><i class="fa fa-link"></i></a>-->
+                  <!--<a href="portfolio-item.php"><i class="fa fa-link"></i></a>-->
                   <!--<a href="../../assets/frontend/pages/img/works/img4.jpg" class="fancybox-button" title="Project Name #4" data-rel="fancybox-button"><i class="fa fa-search"></i></a>-->
                 <!--</em>-->
                 <!--<a class="recent-work-description" href="#">-->
