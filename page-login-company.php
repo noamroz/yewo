@@ -144,13 +144,13 @@ License: You must have a valid license purchased only from themeforest (the abov
                     <div class="form-group">
                       <label for="email" class="col-lg-4 control-label">Email <span class="require">*</span></label>
                       <div class="col-lg-8">
-                        <input type="text" value="avinoamroz@gmail.com" class="form-control" id="email" name="email"  >
+                        <input type="text" value="levimatan@gmail.com" class="form-control" id="email" name="email"  >
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="password" class="col-lg-4 control-label">Password <span class="require">*</span></label>
                       <div class="col-lg-8">
-                        <input type="text" class="form-control" id="password" name="password" value="avinoam">
+                        <input type="text" class="form-control" id="password" name="password" value="MatanMatan">
                       </div>
                     </div>
                     <div class="row">
