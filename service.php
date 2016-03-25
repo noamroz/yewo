@@ -320,6 +320,7 @@ $response['code'] = 1;
 		if(!$retval) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
+			die($sql);
 			$retval2 = mysql_query( $sql, $conn );
 			mysql_query("COMMIT");
 		} else {
