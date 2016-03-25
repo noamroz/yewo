@@ -333,7 +333,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 
         function logincheck() {
             jQuery.ajax({
-            url: 'service.php?format=json&method=login&action=2',
+            url: 'https://yewo.herokuapp.com/service.php?format=json&method=login&action=2',
             type: 'post',
             success: function (data) {
                 // if data is empty
@@ -349,8 +349,9 @@ License: You must have a valid license purchased only from themeforest (the abov
                 }
             },
             // if general error
-            error: function () {
-                alert('an error has occured');
+            error: function(xhr, status, error) {
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
             }, async: true
 
         });
