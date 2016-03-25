@@ -160,7 +160,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             <div class="content-form-page">
               <div class="row">
                 <div class="col-md-7 col-sm-7">
-                  <form class="form-horizontal form-without-legend" role="form" method="post" id="login-rep" name="login-rep">
+                  <form class="form-horizontal form-without-legend" role="form" method="post" id="login-rep" name="login-rep" action="">
 
                     <div class="form-group">
                       <label for="email" class="col-lg-4 control-label">Email <span class="require">*</span></label>
