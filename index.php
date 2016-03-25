@@ -38,7 +38,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <link rel="shortcut icon" href="../../favicon.ico">
 
   <!-- Fonts START -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
@@ -100,8 +100,8 @@ License: You must have a valid license purchased only from themeforest (the abov
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="page-login-company.php"><b>Company Login </b></a></li>
                         <li><a href="page-reg-Company.php"><b>Company Signup </b></a></li>
-                        <li><a href="page-login.php"><b>Freelance Login </b></a></li>
-                        <li><a href="page-reg-page.php"><b>Freelance Signup </b></a></li>
+                        <li><a href="page-login.php"><b>Rep Login </b></a></li>
+                        <li><a href="page-reg-page.php"><b>Rep Signup </b></a></li>
                     </ul>
                 </div>
                 <!-- END TOP BAR MENU -->

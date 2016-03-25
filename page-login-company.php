@@ -161,7 +161,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                     </div>
                     <div class="row">
                       <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary" onclick="logincheck();">Login</button>
                       </div>
                     </div>
                     <div class="row">
@@ -315,6 +315,36 @@ License: You must have a valid license purchased only from themeforest (the abov
             Layout.initUniform();
             Layout.initTwitter();
         });
+
+        function logincheck() {
+            jQuery.ajax({
+            url: 'https://yewo.herokuapp.com/service.php?format=json&method=login&action=1',
+            type: 'post',
+            data: jQuery("#login-rep").serialize(),
+            success: function (data) {
+                // if data is empty
+                if (!data)
+                {
+                    alert('an error has occured');
+                }
+                // if data is not empty
+                else {
+                    //console.log("222");
+                    //console.log(data);
+
+                    document.cookie = "yewo=" + data + "; path=/";
+
+                    window.location = "yewo_table.php";
+                }
+            },
+            // if general error
+            error: function(xhr, status, error) {
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }, async: true
+
+        });
+        }
     </script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
