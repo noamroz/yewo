@@ -314,7 +314,7 @@ $response['code'] = 1;
 		$retval = mysql_query( $sql, $conn );
 		$values = mysql_fetch_assoc($results);
 		$num_rows = $values['total'];
-		//die($num_rows."is num");
+		die($num_rows."is num");
 		if($num_rows==0) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
