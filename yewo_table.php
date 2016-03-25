@@ -1135,7 +1135,7 @@ function drawSmallTable(data,session_id) {
 		{
 			return;
 		}
-		var the_table = $("	<div class=\"col-md-12\"><div class=\"portlet box grey-cascade\"><div class=\"portlet-title\"><div class=\"caption\"><i class=\"fa fa-globe\"></i>Events List</div><div class=\"tools\"><a href=\"javascript:;\" class=\"collapse\"></a><a href=\"#portlet-config\" data-toggle=\"modal\" class=\"config\"></a><a href=\"javascript:;\" class=\"reload\"></a><a href=\"javascript:;\" class=\"remove\"></a></div></div>	<div class=\"portlet-body\"><table class=\"table table-striped table-bordered table-hover\" id=\"sample_2\"><thead><tr><th> Name </th><th>URL</th><th> Signup</th>	<th> Action</th></thead><tbody>");										
+		var the_table = $("	<div class=\"col-md-12\"><div class=\"portlet box grey-cascade\"><div class=\"portlet-title\"><div class=\"caption\"><i class=\"fa fa-globe\"></i>Attending List</div><div class=\"tools\"><a href=\"javascript:;\" class=\"collapse\"></a><a href=\"#portlet-config\" data-toggle=\"modal\" class=\"config\"></a><a href=\"javascript:;\" class=\"reload\"></a><a href=\"javascript:;\" class=\"remove\"></a></div></div>	<div class=\"portlet-body\"><table class=\"table table-striped table-bordered table-hover\" id=\"sample_2\"><thead><tr><th> Picture </th><th> Name </th><th>URL</th><th> Signup</th>	<th> Action</th></thead><tbody>");										
 		$("#table_small").html(the_table);
 		for (var i = 0; i < data.data.length; i++) {
 			if(session_id != 1)
@@ -1153,6 +1153,8 @@ function drawSmallTable(data,session_id) {
 		var row = $("<tr class=\"odd gradeX\"/>")
 		$("#sample_2").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
 		
+		row.append($("<td><img src="+ rowData.picture +" style=\"width:37px;height:39px;\"></td>"));
+
 		row.append($("<td>" + rowData.full_name + "</td>"));
 		row.append($("<td><a href=" + rowData.linkedin + "\">"+ rowData.linkedin +" </a> </td>"));
 		row.append($("<td	>" + rowData.signup_date + "</td>"));
