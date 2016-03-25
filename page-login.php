@@ -345,6 +345,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 // if data is not empty
                 else {
                     //console.log("222");
+                    document.cookie = "yewo=" + data + "; path=/";
                     //console.log(data);
                     window.location = "yewo_table.php";
                 }
