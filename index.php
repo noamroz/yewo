@@ -486,7 +486,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 data-speed="400" 
                 data-start="1500" 
                 data-easing="easeOutBack">
-                <iframe src="http://player.vimeo.com/video/56974716?portrait=0" width="420" height="240" style="border:0" allowFullScreen></iframe> 
+                <iframe src="https://player.vimeo.com/video/56974716?portrait=0" width="420" height="240" style="border:0" allowFullScreen></iframe> 
               </div>
               <div class="caption lfr slide_title"
                 data-x="470"
