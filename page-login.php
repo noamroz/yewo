@@ -332,7 +332,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         });
 
         jQuery( "#login-rep" ).submit(function( event ) {
-          alert( "Handler for .submit() called." );
+          //alert( "Handler for .submit() called." );
           event.preventDefault();
         });
 

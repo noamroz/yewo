@@ -497,6 +497,10 @@ License: You must have a valid license purchased only from themeforest (the abov
             Layout.initTwitter();
         });
 
+        jQuery( "#signup-rep" ).submit(function( event ) {
+          //alert( "Handler for .submit() called." );
+          event.preventDefault();
+        });
 
         function signup() {
             jQuery.ajax({
