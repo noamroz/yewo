@@ -1240,11 +1240,11 @@ $( document ).ready(function() {
 		row.append($("<td> <a class=\"btn default green\" data-toggle=\"modal\" onclick=\"getAttending("+rowData.id+")\" href=\"#responsive\">	Details </a> </td>"));
 		if(rowData.attending == "true")
 		{
-			row.append($("<td> <input type=\"checkbox\" class=\"checkboxes\" checked value=\"0\"/> </td>"));
+			row.append($("<td> <input type=\"checkbox\"  onclick=\"setAttending("+rowData.id+")\" class=\"checkboxes\" checked value=\"0\"/> </td>"));
 		}
 		else
 		{
-			row.append($("<td> <input type=\"checkbox\" class=\"checkboxes\" value=\"1\"/> </td>"));
+			row.append($("<td> <input type=\"checkbox\"  onclick=\"setAttending("+rowData.id+")\" class=\"checkboxes\" value=\"1\"/> </td>"));
 		}
 		return row;
 	}
@@ -1273,6 +1273,27 @@ function writeCookie(name,value,days) {
     }
     document.cookie = name + "=" + value + expires + "; path=/";
 }
+
+function setAttending(event_id)
+	{
+		var session = readCookie("yewo");
+		/*if(session == '')
+		{
+			return null;
+		}*/
+		$.ajax({
+		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=attending&action=1',
+		   data: "company_id=2&event_id="+event_id,
+		   error: function() {
+			  $('#info').html('<p>An error has occurred</p>');
+		   },
+		   dataType: 'json',
+		   success: function(data) {
+		   },
+		   type: 'POST'
+		});
+	}
+	
 
 function readCookie(name) {
     var i, c, ca, nameEQ = name + "=";
