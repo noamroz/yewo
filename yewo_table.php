@@ -24,7 +24,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <meta content="" name="description"/>
 <meta content="" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -1081,18 +1081,20 @@ function newPopup(url) {
 		url,'popUpWindow','height=500,width=700,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 }
 
-function getAttending()
+function getAttending(event_id)
 {
 console.log( "ready!" );
 	var session = readCookie("yewo");
-	if(session == '')
+	/*if(session == '')
 	{
 		return null;
-	}
-	if( session.id == 1 )//is representative 
+	}*/
+	var session_id = 1;
+	
+	if( 1 != 1 )//is representative 
 	{
 		$.ajax({
-			url: 'https://yewo.herokuapp.com/service.php?format=json&method=users&id=4&action=2',
+			url: 'https://yewo.herokuapp.com/service.php?format=json&method=users&id='+event_id+'&action=2',
 		   
 		   data: {
 			  format: 'json'
@@ -1102,7 +1104,7 @@ console.log( "ready!" );
 		   },
 		   dataType: 'json',
 		   success: function(data) {
-			  drawSmallTable(data);
+			  drawSmallTable(data,session_id);
 		   },
 		   type: 'GET'
 		});
@@ -1110,7 +1112,7 @@ console.log( "ready!" );
 	else //is company
 	{
 		$.ajax({
-			url: 'https://yewo.herokuapp.com/service.php?format=json&method=events&id=1&action=1',
+			url: 'https://yewo.herokuapp.com/service.php?format=json&method=users&id='+event_id+'&action=1',
 		   
 		   data: {
 			  format: 'json'
@@ -1120,7 +1122,7 @@ console.log( "ready!" );
 		   },
 		   dataType: 'json',
 		   success: function(data) {
-			  drawSmallTable(data);
+			  drawSmallTable(data,session_id);
 		   },
 		   type: 'GET'
 		});
@@ -1128,7 +1130,7 @@ console.log( "ready!" );
 	
 }
 
-function drawSmallTable(data) {
+function drawSmallTable(data,session_id) {
 		if(data == null || data.data == null )
 		{
 			return;
@@ -1136,11 +1138,18 @@ function drawSmallTable(data) {
 		var the_table = $("	<div class=\"col-md-12\"><div class=\"portlet box grey-cascade\"><div class=\"portlet-title\"><div class=\"caption\"><i class=\"fa fa-globe\"></i>Events List</div><div class=\"tools\"><a href=\"javascript:;\" class=\"collapse\"></a><a href=\"#portlet-config\" data-toggle=\"modal\" class=\"config\"></a><a href=\"javascript:;\" class=\"reload\"></a><a href=\"javascript:;\" class=\"remove\"></a></div></div>	<div class=\"portlet-body\"><table class=\"table table-striped table-bordered table-hover\" id=\"sample_2\"><thead><tr><th> Name </th><th>URL</th><th> Signup</th>	<th> Action</th></thead><tbody>");										
 		$("#table_small").html(the_table);
 		for (var i = 0; i < data.data.length; i++) {
-			addSmallRow(data.data[i]);
+			if(session_id != 1)
+			{
+				addSmallRepRow(data.data[i]);
+			}
+			else
+			{
+				addSmallCompanyRow(data.data[i]);
+			}			
 		}
 	}
 	
-	function addSmallRow(rowData) {
+	function addSmallRepRow(rowData) {
 		var row = $("<tr class=\"odd gradeX\"/>")
 		$("#sample_2").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
 		
@@ -1150,19 +1159,30 @@ function drawSmallTable(data) {
 		row.append($("<td><a href=\"mailto:" + rowData.email + "\">"+ rowData.email +" </a> </td>"));
 		return row;
 	}
+	
+	function addSmallCompanyRow(rowData) {
+		var row = $("<tr class=\"odd gradeX\"/>")
+		$("#sample_2").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+		
+		row.append($("<td>" + rowData.company_name + "</td>"));
+		row.append($("<td><a href=" + rowData.website + "\">"+ rowData.website +" </a> </td>"));
+		row.append($("<td	>" + rowData.signup_date + "</td>"));
+		row.append($("<td><a href=\"mailto:" + rowData.email + "\">"+ rowData.email +" </a> </td>"));
+		return row;
+	}
 
 $( document ).ready(function() {
     console.log( "ready!" );
-	/*
+	
 	var session = readCookie("yewo");
-	if(session == '')
+	/*if(session == '')
 	{
 		return null;
 	}*/
-	if( 1==1) //session.id == 1 )//is company
+	if( 1 != 1 )//is company
 	{
 		$.ajax({
-		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=events&id=1&action=1',
+		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=events&company_id=2&action=1',
 		   data: {
 			  format: 'json'
 		   },
@@ -1179,7 +1199,7 @@ $( document ).ready(function() {
 	else //is representative 
 	{
 		$.ajax({
-		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=users&id=4&action=2',
+		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=events&freelancer_id=2&action=2',
 		   data: {
 			  format: 'json'
 		   },
@@ -1199,7 +1219,7 @@ $( document ).ready(function() {
 		{
 			return;
 		}
-		var the_table = $("	<div class=\"col-md-12\"><div class=\"portlet box grey-cascade\"><div class=\"portlet-title\"><div class=\"caption\"><i class=\"fa fa-globe\"></i>Events List</div><div class=\"tools\"><a href=\"javascript:;\" class=\"collapse\"></a><a href=\"#portlet-config\" data-toggle=\"modal\" class=\"config\"></a><a href=\"javascript:;\" class=\"reload\"></a><a href=\"javascript:;\" class=\"remove\"></a></div></div>	<div class=\"portlet-body\"><table class=\"table table-striped table-bordered table-hover\" id=\"sample_1\"><thead><tr><th> Event Name </th><th>URL</th><th> Location</th>	<th> Date</th>	<th> Actions</th><th> Attending	</th></tr></thead><tbody>");										
+		var the_table = $("	<div class=\"col-md-12\"><div class=\"portlet box grey-cascade\"><div class=\"portlet-title\"><div class=\"caption\"><i class=\"fa fa-globe\"></i>Events List</div><div class=\"tools\"><a href=\"javascript:;\" class=\"collapse\"></a><a href=\"#portlet-config\" data-toggle=\"modal\" class=\"config\"></a><a href=\"javascript:;\" class=\"reload\"></a><a href=\"javascript:;\" class=\"remove\"></a></div></div>	<div class=\"portlet-body\"><table class=\"table table-striped table-bordered table-hover\" id=\"sample_1\"><thead><tr><th> Logo </th><th> Event Name </th><th>URL</th><th> Location</th>	<th> Date</th>	<th> Actions</th><th> Attending	</th></tr></thead><tbody>");										
 		$("#table_main").html(the_table);
 	
 		for (var i = 0; i < data.data.length; i++) {
@@ -1212,13 +1232,20 @@ $( document ).ready(function() {
 	function addRow(rowData) {
 		var row = $("<tr class=\"odd gradeX\"/>")
 		$("#sample_1").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
-		
+		row.append($("<td><img src="+ rowData.logo +" style=\"width:34px;height:28px;\"></td>"));
 		row.append($("<td>" + rowData.event_name + "</td>"));
 		row.append($("<td><a href=\"mailto:" + rowData.url + "\">"+ rowData.url +" </a> </td>"));
 		row.append($("<td	>" + rowData.location + "</td>"));
 		row.append($("<td class=\"center\">" + rowData.date + "</td>"));
-		row.append($("<td> <a class=\"btn default green\" data-toggle=\"modal\" onclick=\"getAttending()\" href=\"#responsive\">	Details </a> </td>"));
-		row.append($("<td> <input type=\"checkbox\" class=\"checkboxes\" value=\"1\"/> </td>"));
+		row.append($("<td> <a class=\"btn default green\" data-toggle=\"modal\" onclick=\"getAttending("+rowData.id+")\" href=\"#responsive\">	Details </a> </td>"));
+		if(rowData.attending == "true")
+		{
+			row.append($("<td> <input type=\"checkbox\" class=\"checkboxes\" checked value=\"0\"/> </td>"));
+		}
+		else
+		{
+			row.append($("<td> <input type=\"checkbox\" class=\"checkboxes\" value=\"1\"/> </td>"));
+		}
 		return row;
 	}
 	
@@ -1234,6 +1261,18 @@ $( document ).ready(function() {
 		row.append($("<td> <input type=\"checkbox\" class=\"checkboxes\" value=\"1\"/> </td>"));
 	}
 });
+
+function writeCookie(name,value,days) {
+    var date, expires;
+    if (days) {
+        date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        expires = "; expires=" + date.toGMTString();
+            }else{
+        expires = "";
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
 
 function readCookie(name) {
     var i, c, ca, nameEQ = name + "=";
