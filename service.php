@@ -312,9 +312,9 @@ $response['code'] = 1;
   		//check if record exists
 		$sql = "SELECT COUNT(*) AS total FROM companies_events WHERE company_id=".$_POST['company_id']." AND event_id=".$_POST['event_id'];
 		$retval = mysql_query( $sql, $conn );
-		$values = mysql_fetch_assoc($results);
+		$values = mysql_fetch_assoc($retval);
 		$num_rows = $values['total'];
-		die($num_rows."is num");
+		//die($num_rows."is num");
 		if($num_rows==0) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
@@ -329,7 +329,7 @@ $response['code'] = 1;
 		//check if record exists
 		$sql = "SELECT COUNT(*) AS total FROM freelancers_events WHERE freelancer_id=".$_POST['freelancer_id']." AND event_id=".$_POST['event_id'];
 		$retval = mysql_query( $sql, $conn );
-		$values = mysql_fetch_assoc($results);
+		$values = mysql_fetch_assoc($retval);
 		$num_rows = $values['total'];
 		if($num_rows==0) {
 			//add record
