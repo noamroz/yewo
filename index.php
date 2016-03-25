@@ -38,7 +38,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <link rel="shortcut icon" href="../../favicon.ico">
 
   <!-- Fonts START -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
@@ -112,7 +112,7 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <!--<a class="site-logo" href="index.php"><img src="../../assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>-->
+        <a class="site-logo" href="index.php"><img src="../../logo-yewo.png" alt="yewo"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -267,8 +267,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             <!--<li><a href="onepage-index.php" target="_blank">One Page</a></li>-->
             <!--<li><a href="http://keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank">Admin theme</a></li>-->
             <li><a href="http://keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank">
-
-              <b style="font-size: 15px">Yewo - An international network of business and tech professionals
+              <b style="font-size: 15px"> An international network of business and tech professionals
                 representing your company’s interests, on-site across the globe </b></a></li>
 
             <!-- BEGIN TOP SEARCH -->
@@ -306,13 +305,13 @@ License: You must have a valid license purchased only from themeforest (the abov
               <img src="../../assets/frontend/pages/img/revolutionslider/bg9.jpg" alt="">
               
               <div class="caption lft slide_title_white slide_item_left"
-                data-x="-275"
-                data-y="90"
+                data-x="30"
+                data-y="30"
                 data-speed="400"
                 data-start="1500"
                 data-easing="easeOutExpo">
-                YEWO - <br>
-                Extend your reach and <br><span class="slide_title_white_bold"> TURN UNIVERSAL </span>
+                <b> YEWO </b> <br>
+                Extend your reach <br><span class="slide_title_white_bold"> TURN UNIVERSAL </span>
               </div>
               <!--<div class="caption lft slide_subtitle_white slide_item_left"-->
                 <!--data-x="87"-->
@@ -322,27 +321,29 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <!--data-easing="easeOutExpo">-->
               <!--</div>-->
               <a class="caption lft btn dark slide_btn slide_item_left"
-                 href="page-reg-Company.php.php"
-                data-x="-200"
-                data-y="315"
+                 href="page-reg-Company.php"
+                data-x="30"
+                data-y="270"
                 data-speed="400"
                 data-start="3000"
                 data-easing="easeOutExpo"
-                 style=" font-size:20px; font-weight: bold; vertical-align: middle">
-                   Company
+                 style="width:170px; height:50px;  font-size:20px; font-weight: bold; vertical-align: middle">
+                <br>
+                Company
               </a>
               <a class="caption lft btn dark slide_btn slide_item_left"
                  href="page-reg-page.php"
-                 data-x="0"
-                 data-y="315"
+                 data-x="250"
+                 data-y="270"
                  data-speed="400"
                  data-start="3000"
                  data-easing="easeOutExpo"
-                 style="font-size:20px; font-weight: bold; vertical-align: middle">
+                 style="width:170px; height:50px;  font-size:20px; font-weight: bold; vertical-align: middle">
+                <br>
                 Representative
               </a>
               <div class="caption lfb"
-                data-x="400"
+                data-x="600"
                 data-y="0" 
                 data-speed="700" 
                 data-start="1000" 
@@ -389,193 +390,193 @@ License: You must have a valid license purchased only from themeforest (the abov
                 data-start="3000"
                 data-easing="easeOutExpo">
                 Start NOW
-              </a>                        
+              </a>
               <div class="caption lfb"
-                data-x="640" 
-                data-y="55" 
-                data-speed="700" 
-                data-start="1000" 
+                data-x="640"
+                data-y="55"
+                data-speed="700"
+                data-start="1000"
                 data-easing="easeOutExpo">
                 <img src="../../assets/frontend/pages/img/revolutionslider/man-winner.png" alt="Image 1">
               </div>
             </li>
 
-            <!-- THE SECOND SLIDE -->
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb="../../assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg">                        
-              <img src="../../assets/frontend/pages/img/revolutionslider/bg2.jpg" alt="">
-              <div class="caption lfl slide_title slide_item_left"
-                data-x="30"
-                data-y="125"
-                data-speed="400"
-                data-start="3500"
-                data-easing="easeOutExpo">
-                On your behalf - For your benefit
-              </div>
-              <div class="caption lfl slide_subtitle slide_item_left"
-                data-x="30"
-                data-y="200"
-                data-speed="400"
-                data-start="4000"
-                data-easing="easeOutExpo">
-                Responsive Admin &amp; Website Theme
-              </div>
-              <div class="caption lfl slide_desc slide_item_left"
-                data-x="30"
-                data-y="245"
-                data-speed="400"
-                data-start="4500"
-                data-easing="easeOutExpo">
-                Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
-              </div>                        
-              <div class="caption lfr slide_item_right" 
-                data-x="635" 
-                data-y="105" 
-                data-speed="1200" 
-                data-start="1500" 
-                data-easing="easeOutBack">
-                <img src="../../assets/frontend/pages/img/revolutionslider/mac.png" alt="Image 1">
-              </div>
-              <div class="caption lfr slide_item_right" 
-                data-x="580" 
-                data-y="245" 
-                data-speed="1200" 
-                data-start="2000" 
-                data-easing="easeOutBack">
-                <img src="../../assets/frontend/pages/img/revolutionslider/ipad.png" alt="Image 1">
-              </div>
-              <div class="caption lfr slide_item_right" 
-                data-x="735" 
-                data-y="290" 
-                data-speed="1200" 
-                data-start="2500" 
-                data-easing="easeOutBack">
-                <img src="../../assets/frontend/pages/img/revolutionslider/iphone.png" alt="Image 1">
-              </div>
-              <div class="caption lfr slide_item_right" 
-                data-x="835" 
-                data-y="230" 
-                data-speed="1200" 
-                data-start="3000" 
-                data-easing="easeOutBack">
-                <img src="../../assets/frontend/pages/img/revolutionslider/macbook.png" alt="Image 1">
-              </div>
-              <div class="caption lft slide_item_right" 
-                data-x="865" 
-                data-y="45" 
-                data-speed="500" 
-                data-start="5000" 
-                data-easing="easeOutBack">
-                <img src="../../assets/frontend/pages/img/revolutionslider/hint1-red.png" id="rev-hint1" alt="Image 1">
-              </div>                        
-              <div class="caption lfb slide_item_right" 
-                data-x="355" 
-                data-y="355" 
-                data-speed="500" 
-                data-start="5500" 
-                data-easing="easeOutBack">
-                <img src="../../assets/frontend/pages/img/revolutionslider/hint2-red.png" id="rev-hint2" alt="Image 1">
-              </div>
-            </li>
-                        
-            <!-- THE THIRD SLIDE -->
-            <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="../../assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg">
-              <img src="../../assets/frontend/pages/img/revolutionslider/bg3.jpg" alt="">
-              <div class="caption lfl slide_item_left" 
-                data-x="30" 
-                data-y="95" 
-                data-speed="400" 
-                data-start="1500" 
-                data-easing="easeOutBack">
-                <iframe src="https://player.vimeo.com/video/56974716?portrait=0" width="420" height="240" style="border:0" allowFullScreen></iframe> 
-              </div>
-              <div class="caption lfr slide_title"
-                data-x="470"
-                data-y="100"
-                data-speed="400"
-                data-start="2000"
-                data-easing="easeOutExpo">
-                Responsive Video Support
-              </div>
-              <div class="caption lfr slide_subtitle"
-                data-x="470"
-                data-y="170"
-                data-speed="400"
-                data-start="2500"
-                data-easing="easeOutExpo">
-                Youtube, Vimeo and others.
-              </div>
-              <div class="caption lfr slide_desc"
-                data-x="470"
-                data-y="220"
-                data-speed="400"
-                data-start="3000"
-                data-easing="easeOutExpo">
-                Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
-              </div>
-              <a class="caption lfr btn yellow slide_btn" href=""
-                data-x="470"
-                data-y="280"
-                                 data-speed="400"
-                                 data-start="3500"
-                                 data-easing="easeOutExpo">
-                                 Watch more Videos!
-                            </a>
-                        </li>               
-                        
-                        <!-- THE FORTH SLIDE -->
-                        <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="../../assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg">
-                            <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                            <img src="../../assets/frontend/pages/img/revolutionslider/bg4.jpg" alt="">
-                             <div class="caption lft slide_title"
-                                 data-x="30"
-                                 data-y="105"
-                                 data-speed="400"
-                                 data-start="1500"
-                                 data-easing="easeOutExpo">
-                                 What else included ?
-                            </div>
-                            <div class="caption lft slide_subtitle"
-                                 data-x="30"
-                                 data-y="180"
-                                 data-speed="400"
-                                 data-start="2000"
-                                 data-easing="easeOutExpo">
-                                 The Most Complete Admin Theme
-                            </div>
-                            <div class="caption lft slide_desc"
-                                 data-x="30"
-                                 data-y="225"
-                                 data-speed="400"
-                                 data-start="2500"
-                                 data-easing="easeOutExpo">
-                                 Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.
-                            </div>
-                            <a class="caption lft slide_btn btn red slide_item_left" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"
-                                 data-x="30"
-                                 data-y="300"
-                                 data-speed="400"
-                                 data-start="3000"
-                                 data-easing="easeOutExpo">
-                                 Learn More!
-                            </a>
-                            <div class="caption lft start"
-                                 data-x="670"
-                                 data-y="55"
-                                 data-speed="400"
-                                 data-start="2000"
-                                 data-easing="easeOutBack"  >
-                                 <img src="../../assets/frontend/pages/img/revolutionslider/iphone_left.png" alt="Image 2">
-                            </div>
+            <!--&lt;!&ndash; THE SECOND SLIDE &ndash;&gt;-->
+            <!--<li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb="../../assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg">-->
+              <!--<img src="../../assets/frontend/pages/img/revolutionslider/bg2.jpg" alt="">-->
+              <!--<div class="caption lfl slide_title slide_item_left"-->
+                <!--data-x="30"-->
+                <!--data-y="125"-->
+                <!--data-speed="400"-->
+                <!--data-start="3500"-->
+                <!--data-easing="easeOutExpo">-->
+                <!--On your behalf - For your benefit-->
+              <!--</div>-->
+              <!--<div class="caption lfl slide_subtitle slide_item_left"-->
+                <!--data-x="30"-->
+                <!--data-y="200"-->
+                <!--data-speed="400"-->
+                <!--data-start="4000"-->
+                <!--data-easing="easeOutExpo">-->
+                <!--Responsive Admin &amp; Website Theme-->
+              <!--</div>-->
+              <!--<div class="caption lfl slide_desc slide_item_left"-->
+                <!--data-x="30"-->
+                <!--data-y="245"-->
+                <!--data-speed="400"-->
+                <!--data-start="4500"-->
+                <!--data-easing="easeOutExpo">-->
+                <!--Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.-->
+              <!--</div>-->
+              <!--<div class="caption lfr slide_item_right"-->
+                <!--data-x="635"-->
+                <!--data-y="105"-->
+                <!--data-speed="1200"-->
+                <!--data-start="1500"-->
+                <!--data-easing="easeOutBack">-->
+                <!--<img src="../../assets/frontend/pages/img/revolutionslider/mac.png" alt="Image 1">-->
+              <!--</div>-->
+              <!--<div class="caption lfr slide_item_right"-->
+                <!--data-x="580"-->
+                <!--data-y="245"-->
+                <!--data-speed="1200"-->
+                <!--data-start="2000"-->
+                <!--data-easing="easeOutBack">-->
+                <!--<img src="../../assets/frontend/pages/img/revolutionslider/ipad.png" alt="Image 1">-->
+              <!--</div>-->
+              <!--<div class="caption lfr slide_item_right"-->
+                <!--data-x="735"-->
+                <!--data-y="290"-->
+                <!--data-speed="1200"-->
+                <!--data-start="2500"-->
+                <!--data-easing="easeOutBack">-->
+                <!--<img src="../../assets/frontend/pages/img/revolutionslider/iphone.png" alt="Image 1">-->
+              <!--</div>-->
+              <!--<div class="caption lfr slide_item_right"-->
+                <!--data-x="835"-->
+                <!--data-y="230"-->
+                <!--data-speed="1200"-->
+                <!--data-start="3000"-->
+                <!--data-easing="easeOutBack">-->
+                <!--<img src="../../assets/frontend/pages/img/revolutionslider/macbook.png" alt="Image 1">-->
+              <!--</div>-->
+              <!--<div class="caption lft slide_item_right"-->
+                <!--data-x="865"-->
+                <!--data-y="45"-->
+                <!--data-speed="500"-->
+                <!--data-start="5000"-->
+                <!--data-easing="easeOutBack">-->
+                <!--<img src="../../assets/frontend/pages/img/revolutionslider/hint1-red.png" id="rev-hint1" alt="Image 1">-->
+              <!--</div>-->
+              <!--<div class="caption lfb slide_item_right"-->
+                <!--data-x="355"-->
+                <!--data-y="355"-->
+                <!--data-speed="500"-->
+                <!--data-start="5500"-->
+                <!--data-easing="easeOutBack">-->
+                <!--<img src="../../assets/frontend/pages/img/revolutionslider/hint2-red.png" id="rev-hint2" alt="Image 1">-->
+              <!--</div>-->
+            <!--</li>-->
 
-                            <div class="caption lft start"
-                                 data-x="850"
-                                 data-y="55"
-                                 data-speed="400"
-                                 data-start="2400"
-                                 data-easing="easeOutBack"  >
-                                 <img src="../../assets/frontend/pages/img/revolutionslider/iphone_right.png" alt="Image 3">
-                            </div>
-                        </li>
+            <!--&lt;!&ndash; THE THIRD SLIDE &ndash;&gt;-->
+            <!--<li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="../../assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg">-->
+              <!--<img src="../../assets/frontend/pages/img/revolutionslider/bg3.jpg" alt="">-->
+              <!--<div class="caption lfl slide_item_left"-->
+                <!--data-x="30"-->
+                <!--data-y="95"-->
+                <!--data-speed="400"-->
+                <!--data-start="1500"-->
+                <!--data-easing="easeOutBack">-->
+                <!--<iframe src="http://player.vimeo.com/video/56974716?portrait=0" width="420" height="240" style="border:0" allowFullScreen></iframe>-->
+              <!--</div>-->
+              <!--<div class="caption lfr slide_title"-->
+                <!--data-x="470"-->
+                <!--data-y="100"-->
+                <!--data-speed="400"-->
+                <!--data-start="2000"-->
+                <!--data-easing="easeOutExpo">-->
+                <!--Responsive Video Support-->
+              <!--</div>-->
+              <!--<div class="caption lfr slide_subtitle"-->
+                <!--data-x="470"-->
+                <!--data-y="170"-->
+                <!--data-speed="400"-->
+                <!--data-start="2500"-->
+                <!--data-easing="easeOutExpo">-->
+                <!--Youtube, Vimeo and others.-->
+              <!--</div>-->
+              <!--<div class="caption lfr slide_desc"-->
+                <!--data-x="470"-->
+                <!--data-y="220"-->
+                <!--data-speed="400"-->
+                <!--data-start="3000"-->
+                <!--data-easing="easeOutExpo">-->
+                <!--Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.-->
+              <!--</div>-->
+              <!--<a class="caption lfr btn yellow slide_btn" href=""-->
+                <!--data-x="470"-->
+                <!--data-y="280"-->
+                                 <!--data-speed="400"-->
+                                 <!--data-start="3500"-->
+                                 <!--data-easing="easeOutExpo">-->
+                                 <!--Watch more Videos!-->
+                            <!--</a>-->
+                        <!--</li>-->
+
+                        <!-- THE FORTH SLIDE -->
+                        <!--<li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb="../../assets/frontend/pages/img/revolutionslider/thumbs/thumb2.jpg">-->
+                            <!--&lt;!&ndash; THE MAIN IMAGE IN THE FIRST SLIDE &ndash;&gt;-->
+                            <!--<img src="../../assets/frontend/pages/img/revolutionslider/bg4.jpg" alt="">-->
+                             <!--<div class="caption lft slide_title"-->
+                                 <!--data-x="30"-->
+                                 <!--data-y="105"-->
+                                 <!--data-speed="400"-->
+                                 <!--data-start="1500"-->
+                                 <!--data-easing="easeOutExpo">-->
+                                 <!--What else included ?-->
+                            <!--</div>-->
+                            <!--<div class="caption lft slide_subtitle"-->
+                                 <!--data-x="30"-->
+                                 <!--data-y="180"-->
+                                 <!--data-speed="400"-->
+                                 <!--data-start="2000"-->
+                                 <!--data-easing="easeOutExpo">-->
+                                 <!--The Most Complete Admin Theme-->
+                            <!--</div>-->
+                            <!--<div class="caption lft slide_desc"-->
+                                 <!--data-x="30"-->
+                                 <!--data-y="225"-->
+                                 <!--data-speed="400"-->
+                                 <!--data-start="2500"-->
+                                 <!--data-easing="easeOutExpo">-->
+                                 <!--Lorem ipsum dolor sit amet, consectetuer elit sed diam<br> nonummy amet euismod dolore.-->
+                            <!--</div>-->
+                            <!--<a class="caption lft slide_btn btn red slide_item_left" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"-->
+                                 <!--data-x="30"-->
+                                 <!--data-y="300"-->
+                                 <!--data-speed="400"-->
+                                 <!--data-start="3000"-->
+                                 <!--data-easing="easeOutExpo">-->
+                                 <!--Learn More!-->
+                            <!--</a>-->
+                            <!--<div class="caption lft start"-->
+                                 <!--data-x="670"-->
+                                 <!--data-y="55"-->
+                                 <!--data-speed="400"-->
+                                 <!--data-start="2000"-->
+                                 <!--data-easing="easeOutBack"  >-->
+                                 <!--<img src="../../assets/frontend/pages/img/revolutionslider/iphone_left.png" alt="Image 2">-->
+                            <!--</div>-->
+
+                            <!--<div class="caption lft start"-->
+                                 <!--data-x="850"-->
+                                 <!--data-y="55"-->
+                                 <!--data-speed="400"-->
+                                 <!--data-start="2400"-->
+                                 <!--data-easing="easeOutBack"  >-->
+                                 <!--<img src="../../assets/frontend/pages/img/revolutionslider/iphone_right.png" alt="Image 3">-->
+                            <!--</div>-->
+                        <!--</li>-->
                 </ul>
                 <div class="tp-bannertimer tp-bottom"></div>
             </div>
@@ -588,7 +589,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         <!-- BEGIN SERVICE BOX -->
         <div class="row service-box margin-bottom-40">
           <!-- BEGIN BLOCKQUOTE BLOCK -->
-          <div class="row quote-v1 margin-bottom-30">
+          <div class="row quote-v1 margin-bottom-30" align="center">
             <!--<div class="col-md-3 text-right">-->
             <span> An int'l network of business&tech professionals representing your company’s interests, on-site across the globe </span>
               <!--<a class="btn-transparent" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"><i class="fa fa-rocket margin-right-10"></i>check events</a>-->
@@ -599,34 +600,31 @@ License: You must have a valid license purchased only from themeforest (the abov
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
               <em><i class="fa fa-location-arrow blue"></i></em>
-              <span>Representation & Leads</span>
+              <span>Representation on site</span>
             </div>
             <p> TURN UNIVERSAL <br>
-              Send someone to events you cannot attend -
-              <br> to generate leads
+              Have a business professioal representing you in events you can't attend.
             </p>
 
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
               <em><i class="fa fa-check red"></i></em>
-              <span> Wingman? </span>
+              <span> Crucial Skills </span>
             </div>
-            <p> That's right! <br>
-              Focus on what you do best, let others do the rest
-              <br>
-              Networking is a skill, let your <bold> wingman </bold> show you the light, introduce you to people,
-              and open the difficult doors.
+            <p> <br>
+              Networking skills, Personal acquaintance with the local ecosystem and cultural & lingual sameness,
+              are crucial factors your REP can complete for you.
             </p>
 
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
               <em><i class="fa fa-compress green"></i></em>
-              <span> </span>
+              <span> Professional Wingman on-site</span>
             </div>
             <p>
-              Let people
+              Choose a professional networking representative to take you by the hand, introduce you around the convention, and perfect your presentation.
             </p>
           </div>
         </div>
@@ -826,20 +824,20 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3">
           <div class="col-md-4 col-sm-4 front-step-col">
             <div class="front-step front-step1">
-              <h2>Goal definition</h2>
-              <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
+              <h2>Choose an Event</h2>
+              <p> Choose an event that you would like to attend but just can't because of time and money circumstances</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 front-step-col">
             <div class="front-step front-step2">
-              <h2>Analyse</h2>
-              <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
+              <h2> Choose your *REP* </h2>
+              <p> Sort and choose from the list of representatives that are going to that event and affirm their skills by Linkedin. </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 front-step-col">
             <div class="front-step front-step3">
-              <h2>Implementation</h2>
-              <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
+              <h2>Achieve the Goal</h2>
+              <p>Whether its exposure, leads or PR, you can now eat the cake, and have it too. </p>
             </div>
           </div>
         </div>
@@ -848,61 +846,10 @@ License: You must have a valid license purchased only from themeforest (the abov
         <!-- BEGIN CLIENTS -->
         <div class="row margin-bottom-40 our-clients">
           <div class="col-md-3">
-            <h2><a href="#">Our Clients</a></h2>
-            <p>Lorem dipsum folor margade sitede lametep eiusmod psumquis dolore.</p>
+
           </div>
           <div class="col-md-9">
-            <div class="owl-carousel owl-carousel6-brands">
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_1_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_1.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_2_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_2.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_3_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_3.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_4_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_4.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_5_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_5.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_6_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_6.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_7_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_7.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>
-              <div class="client-item">
-                <a href="#">
-                  <img src="../../assets/frontend/pages/img/clients/client_8_gray.png" class="img-responsive" alt="">
-                  <img src="../../assets/frontend/pages/img/clients/client_8.png" class="color-img img-responsive" alt="">
-                </a>
-              </div>                  
-            </div>
-          </div>          
+          </div>
         </div>
         <!-- END CLIENTS -->
       </div>
@@ -915,65 +862,16 @@ License: You must have a valid license purchased only from themeforest (the abov
           <!-- BEGIN BOTTOM ABOUT BLOCK -->
           <div class="col-md-4 col-sm-6 pre-footer-col">
             <!--<h2>About us</h2>-->
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat.</p>
-
-            <div class="photo-stream">
-              <h2>Photos Stream</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img5-small.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img1.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img4-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img6.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img3.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img2-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img2.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img5.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img5-small.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img1.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img4-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img6.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img3.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img2-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img2.jpg"></a></li>
-              </ul>                    
-            </div>
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
 
           <!-- BEGIN BOTTOM CONTACTS -->
           <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Our Contacts</h2>
-            <address class="margin-bottom-40">
-              35, Lorem Lis Street, Park Ave<br>
-              California, US<br>
-              Phone: 300 323 3456<br>
-              Fax: 300 323 1456<br>
-              Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
-              Skype: <a href="skype:metronic">metronic</a>
-            </address>
-
-            <div class="pre-footer-subscribe-box pre-footer-subscribe-box-vertical">
-              <h2>Newsletter</h2>
-              <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-              <form action="#">
-                <div class="input-group">
-                  <input type="text" placeholder="youremail@mail.com" class="form-control">
-                  <span class="input-group-btn">
-                    <button class="btn btn-primary" type="submit">Subscribe</button>
-                  </span>
-                </div>
-              </form>
-            </div>
           </div>
           <!-- END BOTTOM CONTACTS -->
 
           <!-- BEGIN TWITTER BLOCK --> 
           <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2 class="margin-bottom-0">Latest Tweets</h2>
-            <a class="twitter-timeline"
-               href="https://twitter.com/twitterapi" data-tweet-limit="1" data-theme="dark"
-               data-link-color="#57C8EB" data-widget-id="455411516829736961"
-               data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @keenthemes...</a>
           </div>
           <!-- END TWITTER BLOCK -->
         </div>
@@ -987,7 +885,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="row">
           <!-- BEGIN COPYRIGHT -->
           <div class="col-md-6 col-sm-6 padding-top-10">
-            2014 © Metronic Shop UI. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            2014 © Yewo UI. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
           </div>
           <!-- END COPYRIGHT -->
           <!-- BEGIN PAYMENTS -->

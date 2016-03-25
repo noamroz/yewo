@@ -38,7 +38,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <link rel="shortcut icon" href="favicon.ico">
 
   <!-- Fonts START -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
@@ -88,18 +88,18 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <!-- BEGIN TOP BAR LEFT PART -->
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
-                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
-                        <li><i class="fa fa-envelope-o"></i><span>info@keenthemes.com</span></li>
+                        <li><i class="fa fa-phone"></i><span>+972524380096</span></li>
+                        <li><i class="fa fa-envelope-o"></i><span>info@yewo.com</span></li>
                     </ul>
                 </div>
                 <!-- END TOP BAR LEFT PART -->
                 <!-- BEGIN TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                   <ul class="list-unstyled list-inline pull-right">
-                    <li><a href="page-login-company.html"><b>Company Login </b></a></li>
-                    <li><a href="page-reg-Company.html"><b>Company Signup </b></a></li>
-                    <li><a href="page-login.html"><b>Freelance Login </b></a></li>
-                    <li><a href="page-reg-page.html"><b>Freelance Signup </b></a></li>
+                      <li><a href="page-login-company.php"><b>Company Login </b></a></li>
+                      <li><a href="page-reg-Company.php"><b>Company Signup </b></a></li>
+                      <li><a href="page-login.php"><b>Rep Login </b></a></li>
+                      <li><a href="page-reg-page.php"><b>Rep Signup </b></a></li>
                   </ul>
                 </div>
                 <!-- END TOP BAR MENU -->
@@ -110,9 +110,9 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="index.html"><img src="../../assets/frontend/layout/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>
+          <a class="site-logo" href="index.php"><img src="../../logo-yewo.png" alt="Metronic FrontEnd"></a>
 
-        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+          <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
         <!-- BEGIN NAVIGATION -->
         <div class="header-navigation pull-right font-transform-inherit">
@@ -139,28 +139,29 @@ License: You must have a valid license purchased only from themeforest (the abov
             <div class="content-form-page">
               <div class="row">
                 <div class="col-md-7 col-sm-7">
-                  <form class="form-horizontal form-without-legend" role="form" id="login-rep" name="login-rep">
-
+                  <form class="form-horizontal form-without-legend" role="form"
+                          method="post"
+                        action="https://yewo.herokuapp.com/service.php?format=json&method=login&action=1">
                     <div class="form-group">
                       <label for="email" class="col-lg-4 control-label">Email <span class="require">*</span></label>
                       <div class="col-lg-8">
-                        <input type="text" value="levimatan@gmail.com" class="form-control" id="email" name="email"  >
+                        <input type="text" class="form-control" id="email" name="email" >
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="password" class="col-lg-4 control-label">Password <span class="require">*</span></label>
                       <div class="col-lg-8">
-                        <input type="text" class="form-control" id="password" name="password" value="MatanMatan">
+                        <input type="text" class="form-control" id="password" name="password">
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-8 col-md-offset-4 padding-left-0">
-                        <a href="page-forgotton-password.html">Forget Password?</a>
+                        <a href="page-forgotton-password.php">Forget Password?</a>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">
-                        <button type="submit" class="btn btn-primary" onclick="logincheck();">Login</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
                       </div>
                     </div>
                     <div class="row">
@@ -191,76 +192,77 @@ License: You must have a valid license purchased only from themeforest (the abov
         <!-- END SIDEBAR & CONTENT -->
       </div>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>About us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat.</p>
+    <!--<div class="pre-footer">-->
+      <!--<div class="container">-->
+        <!--<div class="row">-->
+          <!--&lt;!&ndash; BEGIN BOTTOM ABOUT BLOCK &ndash;&gt;-->
+          <!--<div class="col-md-4 col-sm-6 pre-footer-col">-->
+            <!--<h2>About us</h2>-->
+            <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat.</p>-->
 
-            <div class="photo-stream">
-              <h2>Photos Stream</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img5-small.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img1.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img4-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img6.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img3.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img2-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img2.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img5.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img5-small.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img1.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img4-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img6.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img3.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img2-large.jpg"></a></li>
-                <li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img2.jpg"></a></li>
-              </ul>                    
-            </div>
-          </div>
-          <!-- END BOTTOM ABOUT BLOCK -->
+            <!--<div class="photo-stream">-->
+              <!--<h2>Photos Stream</h2>-->
+              <!--<ul class="list-unstyled">-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img5-small.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img1.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img4-large.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img6.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img3.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img2-large.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img2.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img5.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img5-small.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img1.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img4-large.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img6.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img3.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/people/img2-large.jpg"></a></li>-->
+                <!--<li><a href="#"><img alt="" src="../../assets/frontend/pages/img/works/img2.jpg"></a></li>-->
+              <!--</ul>                    -->
+            <!--</div>-->
+          <!--</div>-->
+          <!--&lt;!&ndash; END BOTTOM ABOUT BLOCK &ndash;&gt;-->
 
-          <!-- BEGIN BOTTOM CONTACTS -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Our Contacts</h2>
-            <address class="margin-bottom-40">
-              35, Lorem Lis Street, Park Ave<br>
-              California, US<br>
-              Phone: 300 323 3456<br>
-              Fax: 300 323 1456<br>
-              Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
-              Skype: <a href="skype:metronic">metronic</a>
-            </address>
+          <!--&lt;!&ndash; BEGIN BOTTOM CONTACTS &ndash;&gt;-->
+          <!--<div class="col-md-4 col-sm-6 pre-footer-col">-->
+            <!--<h2>Our Contacts</h2>-->
+            <!--<address class="margin-bottom-40">-->
+              <!--35, Lorem Lis Street, Park Ave<br>-->
+              <!--California, US<br>-->
+              <!--Phone: 300 323 3456<br>-->
+              <!--Fax: 300 323 1456<br>-->
+              <!--Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>-->
+              <!--Skype: <a href="skype:metronic">metronic</a>-->
+            <!--</address>-->
 
-            <div class="pre-footer-subscribe-box pre-footer-subscribe-box-vertical">
-              <h2>Newsletter</h2>
-              <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-              <form action="#">
-                <div class="input-group">
-                  <input type="text" placeholder="youremail@mail.com" class="form-control">
-                  <span class="input-group-btn">
-                    <button class="btn btn-primary" type="submit">Subscribe</button>
-                  </span>
-                </div>
-              </form>
-            </div>
-          </div>
-          <!-- END BOTTOM CONTACTS -->
+            <!--<div class="pre-footer-subscribe-box pre-footer-subscribe-box-vertical">-->
+              <!--<h2>Newsletter</h2>-->
+              <!--<p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>-->
+              <!--<form action="#">-->
+                <!--<div class="input-group">-->
+                  <!--<input type="text" placeholder="youremail@mail.com" class="form-control">-->
+                  <!--<span class="input-group-btn">-->
+                    <!--<button class="btn btn-primary" type="submit">Subscribe</button>-->
+                  <!--</span>-->
+                <!--</div>-->
+              <!--</form>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--&lt;!&ndash; END BOTTOM CONTACTS &ndash;&gt;-->
 
-          <!-- BEGIN TWITTER BLOCK --> 
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2 class="margin-bottom-0">Latest Tweets</h2>
-            <a class="twitter-timeline" href="https://twitter.com/twitterapi" data-tweet-limit="1" data-theme="dark" data-link-color="#57C8EB" data-widget-id="455411516829736961" data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @keenthemes...</a>
-          </div>
-          <!-- END TWITTER BLOCK -->
-        </div>
-      </div>
-    </div>
-    <!-- END PRE-FOOTER -->
+          <!--&lt;!&ndash; BEGIN TWITTER BLOCK &ndash;&gt; -->
+          <!--<div class="col-md-4 col-sm-6 pre-footer-col">-->
+            <!--<h2 class="margin-bottom-0">Latest Tweets</h2>-->
+            <!--<a class="twitter-timeline" href="https://twitter.com/twitterapi" data-tweet-limit="1" data-theme="dark" data-link-color="#57C8EB" data-widget-id="455411516829736961" data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @keenthemes...</a>-->
+          <!--</div>-->
+          <!--&lt;!&ndash; END TWITTER BLOCK &ndash;&gt;-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; END PRE-FOOTER &ndash;&gt;-->
 
     <!-- BEGIN FOOTER -->
     <div class="footer">
@@ -268,7 +270,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="row">
           <!-- BEGIN COPYRIGHT -->
           <div class="col-md-6 col-sm-6 padding-top-10">
-            2014 © Metronic Shop UI. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+              2014 © Yewo UI. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
           </div>
           <!-- END COPYRIGHT -->
           <!-- BEGIN PAYMENTS -->
@@ -313,36 +315,6 @@ License: You must have a valid license purchased only from themeforest (the abov
             Layout.initUniform();
             Layout.initTwitter();
         });
-
-        function logincheck() {
-            jQuery.ajax({
-            url: 'https://yewo.herokuapp.com/service.php?format=json&method=login&action=1',
-            type: 'post',
-            data: jQuery("#login-rep").serialize(),
-            success: function (data) {
-                // if data is empty
-                if (!data)
-                {
-                    alert('an error has occured');
-                }
-                // if data is not empty
-                else {
-                    //console.log("222");
-                    //console.log(data);
-
-                    document.cookie = "yewo=" + data + "; path=/";
-
-                    window.location = "yewo_table.php";
-                }
-            },
-            // if general error
-            error: function(xhr, status, error) {
-              var err = eval("(" + xhr.responseText + ")");
-              alert(err.Message);
-            }, async: true
-
-        });
-        }
     </script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
