@@ -325,7 +325,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                       <div class="form-group">
                         <label for="firstname" class="col-lg-4 control-label">Company Name<span class="require">*</span></label>
                         <div class="col-lg-8">
-                          <input type="text" class="form-control" id="firstname" name="firstname">
+                          <input type="text" class="form-control" id="company_name" name="company_name">
                         </div>
                       </div>
                       <div class="form-group">

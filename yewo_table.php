@@ -1091,7 +1091,7 @@ console.log( "ready!" );
 	}*/
 	var session_id = 1;
 	
-	if( 1 != 1 )//is representative 
+	if( !isset(getParameterByName('company_id')) )//is representative 
 	{
 		$.ajax({
 			url: 'https://yewo.herokuapp.com/service.php?format=json&method=users&id='+event_id+'&action=2',
@@ -1181,7 +1181,7 @@ $( document ).ready(function() {
 	{
 		return null;
 	}*/
-	if( 1 != 1 )//is company
+	if( !isset(getParameterByName('company_id')) )//is company
 	{
 		$.ajax({
 		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=events&company_id=2&action=1',
@@ -1296,6 +1296,16 @@ function setAttending(event_id)
 		});
 	}
 	
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    url = url.toLowerCase(); // This is just to avoid case sensitiveness  
+    name = name.replace(/[\[\]]/g, "\\$&").toLowerCase();// This is just to avoid case sensitiveness for query parameter name
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}	
 
 function readCookie(name) {
     var i, c, ca, nameEQ = name + "=";
