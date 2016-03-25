@@ -341,7 +341,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             error: function(xhr, status, error) {
               //var err = eval("(" + xhr.responseText + ")");
               console.log(err.Message);
-            }, async: true
+            }, async: false
 
         });
         }
