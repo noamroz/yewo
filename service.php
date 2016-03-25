@@ -311,30 +311,30 @@ $response['code'] = 1;
   	$sql = "";
 	if($_GET['action'] == 1) { 
   		//check if record exists
-		$sql = "SELECT * FROM companies_events WHERE company_id='".$_POST['company_id']."' AND event_id='".$_POST['event_id']."'";
+		$sql = "SELECT * FROM companies_events WHERE company_id=".$_POST['company_id']." AND event_id=".$_POST['event_id']."";
 		$retval = mysql_query( $sql, $conn );
 					die($sql);
 		if(!$retval) {
 			//add record
-			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES ('".$_POST['company_id']."', '".$_POST['event_id']."')";
+			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
 			$retval2 = mysql_query( $sql, $conn );
 		} else {
 			//remove record
-			$sql = "DELETE FROM companies_events WHERE company_id='".$_POST['company_id']."' AND event_id='".$_POST['event_id']."'";
+			$sql = "DELETE FROM companies_events WHERE company_id=".$_POST['company_id']." AND event_id=".$_POST['event_id'];
 			$retval2 = mysql_query( $sql, $conn );
 		}
   	}
   	else if ($_GET['action'] == 2) {
 		//check if record exists
-		$sql = "SELECT * FROM freelancers_events WHERE freelancer_id='".$_POST['freelancer_id']."' AND event_id='".$_POST['event_id']."'";
+		$sql = "SELECT * FROM freelancers_events WHERE freelancer_id=".$_POST['freelancer_id']." AND event_id=".$_POST['event_id'];
 		$retval = mysql_query( $sql, $conn );
 		if(!$retval) {
 			//add record
-			$sql = "INSERT INTO freelancers_events (freelancer_id, event_id) VALUES ('".$_POST['freelancer_id']."', '".$_POST['event_id']."')";
+			$sql = "INSERT INTO freelancers_events (freelancer_id, event_id) VALUES (".$_POST['freelancer_id'].", ".$_POST['event_id'].")";
 			$retval2 = mysql_query( $sql, $conn );
 		} else {
 			//remove record
-			$sql = "DELETE FROM freelancers_events WHERE freelancer_id='".$_POST['freelancer_id']."' AND event_id='".$_POST['event_id']."'";
+			$sql = "DELETE FROM freelancers_events WHERE freelancer_id=".$_POST['freelancer_id']." AND event_id=".$_POST['event_id'];
 			$retval2 = mysql_query( $sql, $conn );
 		}
   	} 
