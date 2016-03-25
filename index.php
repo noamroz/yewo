@@ -100,7 +100,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="page-login-company.html"><b>Company Login </b></a></li>
                         <li><a href="page-reg-Company.html"><b>Company Signup </b></a></li>
-                        <li><a href="page-login.html"><b>Freelance Login </b></a></li>
+                        <li><a href="page-login.php"><b>Freelance Login </b></a></li>
                         <li><a href="page-reg-page.html"><b>Freelance Signup </b></a></li>
                     </ul>
                 </div>
