@@ -318,7 +318,7 @@ License: You must have a valid license purchased only from themeforest (the abov
               <div class="row">
                 <div class="col-md-7 col-sm-7">
                   <form class="form-horizontal" role="form" method="post"
-                  action="https://yewo.herokuapp.com/service.php?format=json&method=signup&action=1">
+                  action="" id="signup-rep" name="signup-rep">
 
                     <fieldset>
                       <legend>Enter your company details</legend>
@@ -350,7 +350,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 
                     <div class="row">
                       <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">                        
-                        <button type="submit" class="btn btn-primary">Create an account</button>
+                        <button type="submit" class="btn btn-primary" onclick="signup();">Create an account</button>
                         <button type="button" class="btn btn-default">Cancel</button>
                       </div>
                     </div>
@@ -496,6 +496,23 @@ License: You must have a valid license purchased only from themeforest (the abov
             Layout.initUniform();
             Layout.initTwitter();
         });
+
+
+        function signup() {
+            jQuery.ajax({
+            url: 'https://yewo.herokuapp.com/service.php?format=json&method=signup&action=1',
+            type: 'post',
+            data: jQuery("#signup-rep").serialize(),
+            success: function (data) {
+                    alert('you have successfully registered Yewo');
+          window.location = "index.php";        
+          }
+            // if general error
+            error: function () {
+                alert('an error has occured');
+            }, async: true
+        });
+        }
     </script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
