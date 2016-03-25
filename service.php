@@ -182,7 +182,6 @@ if( strcasecmp($_GET['method'],'hello') == 0){
     $counter = 0;
     while($row =mysql_fetch_array($retval))
     {
-        $output[$counter] = $row;
         $sql2="";
         if($_GET['action'] == 1) { 
         	$sql2 = "SELECT COUNT(*) AS total FROM companies_events WHERE event_id=".$row->id." AND company_id=".$_GET['company_id'];
@@ -201,6 +200,8 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 		{
 			$row->attending = "false";	
 		}
+
+        $output[$counter] = $row;		
         $counter++;
     }
 
