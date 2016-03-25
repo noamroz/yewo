@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Metronic Frontend (with Top Bar)</title>
+  <title>yewo - connecting companies to events representatives</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -383,7 +383,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 data-easing="easeOutExpo">
                 Find the right professionals to represent you in events.
               </div>
-              <a class="caption lft btn green slide_btn slide_item_left" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes"
+              <a class="caption lft btn green slide_btn slide_item_left" href="page-reg-Company.php"
                 data-x="40"
                 data-y="290"
                 data-speed="400"
