@@ -204,7 +204,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
         $output[$counter] = $row;
         $counter++;
     }
-
+	mysql_free_result();
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
@@ -243,7 +243,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
         $output[$counter] = $row;
         $counter++;
     }
-
+	mysql_free_result();
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
@@ -282,7 +282,7 @@ if( strcasecmp($_GET['method'],'hello') == 0){
         $output[$counter] = $row;
         $counter++;
     }
-
+	mysql_free_result();
 	mysql_close($conn);
 
 	//die('Could not enter data: ' . $retval);
@@ -367,7 +367,7 @@ $response['code'] = 1;
    	} else {
    		$response['data'] = "output - ".$retval."-".$retval2;
    	}
-
+	mysql_free_result();
 	mysql_close($conn);
 }
 
