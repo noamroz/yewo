@@ -335,7 +335,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             jQuery.ajax({
             url: 'https://yewo.herokuapp.com/service.php?format=json&method=login&action=2',
             type: 'post',
-            data: $("#login-rep").serialize(),
+            data: jQuery("#login-rep").serialize(),
             success: function (data) {
                 // if data is empty
                 if (!data)
