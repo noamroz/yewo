@@ -1153,13 +1153,13 @@ function drawSmallTable(data) {
 
 $( document ).ready(function() {
     console.log( "ready!" );
-	
+	/*
 	var session = readCookie("yewo");
 	if(session == '')
 	{
 		return null;
-	}
-	if( session.id == 1 )//is company
+	}*/
+	if( 1==1) //session.id == 1 )//is company
 	{
 		$.ajax({
 		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=events&id=1&action=1',
