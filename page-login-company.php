@@ -329,15 +329,8 @@ License: You must have a valid license purchased only from themeforest (the abov
                 else {
                     //console.log("222");
                     //console.log(data);
-                    var date, expires;
-                    if (days) {
-                        date = new Date();
-                        date.setTime(date.getTime()+(days*24*60*60*1000));
-                        expires = "; expires=" + date.toGMTString();
-                            }else{
-                        expires = "";
-                    }
-                    document.cookie = "yewo=" + data + expires + "; path=/";
+
+                    document.cookie = "yewo=" + data + "; path=/";
 
                     window.location = "yewo_table.php";
                 }
