@@ -317,12 +317,12 @@ $response['code'] = 1;
 		$conn = mysql_connect($server, $username, $password);
   		mysql_select_db($db);
 		mysql_free_result();
-		if(!$retval) {
+		$values = mysql_fetch_assoc($results);
+		$num_rows = $values['total'];
+		if($num_rows==0) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
-			die($sql);
 			$retval2 = mysql_query( $sql, $conn );
-			mysql_query("COMMIT");
 		} else {
 			//remove record
 			$sql = "DELETE FROM companies_events WHERE company_id=".$_POST['company_id']." AND event_id=".$_POST['event_id'];
