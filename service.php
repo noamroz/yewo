@@ -164,10 +164,10 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 
   	$sql = "";
 	if($_GET['action'] == 1) { 
-  		$sql = "SELECT id,event_name,url,date,location FROM events";// RIGHT JOIN companies_events ON events.id = companies_events.company_id WHERE company_id=".$_GET['id'];
+  		$sql = "SELECT id,event_name,url,date,location,logo FROM events";// RIGHT JOIN companies_events ON events.id = companies_events.company_id WHERE company_id=".$_GET['id'];
   	}
   	else if ($_GET['action'] == 2) {
-		$sql = "SELECT id,event_name,url,date,location FROM events";// JOIN freelancers_events ON events.id = freelancers_events.freelancer_id WHERE freelancer_id=".$_GET['id'];
+		$sql = "SELECT id,event_name,url,date,location,logo FROM events";// JOIN freelancers_events ON events.id = freelancers_events.freelancer_id WHERE freelancer_id=".$_GET['id'];
   	} 
 
 	$retval = mysql_query( $sql, $conn );

@@ -139,19 +139,18 @@ License: You must have a valid license purchased only from themeforest (the abov
             <div class="content-form-page">
               <div class="row">
                 <div class="col-md-7 col-sm-7">
-                  <form class="form-horizontal form-without-legend" role="form"
-                          method="post"
-                        action="https://yewo.herokuapp.com/service.php?format=json&method=login&action=1">
+                  <form class="form-horizontal form-without-legend" role="form" id="login-rep" name="login-rep">
+
                     <div class="form-group">
                       <label for="email" class="col-lg-4 control-label">Email <span class="require">*</span></label>
                       <div class="col-lg-8">
-                        <input type="text" class="form-control" id="email" name="email" >
+                        <input type="text" value="avinoamroz@gmail.com" class="form-control" id="email" name="email"  >
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="password" class="col-lg-4 control-label">Password <span class="require">*</span></label>
                       <div class="col-lg-8">
-                        <input type="text" class="form-control" id="password" name="password">
+                        <input type="text" class="form-control" id="password" name="password" value="avinoam">
                       </div>
                     </div>
                     <div class="row">
@@ -161,7 +160,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                     </div>
                     <div class="row">
                       <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary" onclick="logincheck();">Login</button>
                       </div>
                     </div>
                     <div class="row">
@@ -314,6 +313,43 @@ License: You must have a valid license purchased only from themeforest (the abov
             Layout.initUniform();
             Layout.initTwitter();
         });
+
+        function logincheck() {
+            jQuery.ajax({
+            url: 'https://yewo.herokuapp.com/service.php?format=json&method=login&action=1',
+            type: 'post',
+            data: jQuery("#login-rep").serialize(),
+            success: function (data) {
+                // if data is empty
+                if (!data)
+                {
+                    alert('an error has occured');
+                }
+                // if data is not empty
+                else {
+                    //console.log("222");
+                    //console.log(data);
+                    var date, expires;
+                    if (days) {
+                        date = new Date();
+                        date.setTime(date.getTime()+(days*24*60*60*1000));
+                        expires = "; expires=" + date.toGMTString();
+                            }else{
+                        expires = "";
+                    }
+                    document.cookie = "yewo=" + data + expires + "; path=/";
+
+                    window.location = "yewo_table.php";
+                }
+            },
+            // if general error
+            error: function(xhr, status, error) {
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }, async: true
+
+        });
+        }
     </script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
