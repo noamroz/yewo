@@ -184,10 +184,10 @@ if( strcasecmp($_GET['method'],'hello') == 0){
     {
         $sql2="";
         if($_GET['action'] == 1) { 
-        	$sql2 = "SELECT COUNT(*) AS total FROM companies_events WHERE event_id=".$row->id." AND company_id=".$_GET['company_id'];
+        	$sql2 = "SELECT COUNT(*) AS total FROM companies_events WHERE event_id=".$row['id']." AND company_id=".$_GET['company_id'];
         }
         else if ($_GET['action'] == 2) {
-			$sql2 = "SELECT COUNT(*) AS total FROM freelancer_events WHERE event_id=".$row->id." AND freelancer_id=".$_GET['freelancer_id'];
+			$sql2 = "SELECT COUNT(*) AS total FROM freelancer_events WHERE event_id=".$row['id']." AND freelancer_id=".$_GET['freelancer_id'];
         }
         $retval2 = mysql_query( $sql2, $conn );
         $values = mysql_fetch_assoc($retval2);
