@@ -307,18 +307,14 @@ $response['code'] = 1;
   	$db = "heroku_372223b9430a291";
   	$conn = mysql_connect($server, $username, $password);
   	mysql_select_db($db);
-	mysql_free_result();
   	$sql = "";
 	if($_GET['action'] == 1) { 
   		//check if record exists
 		$sql = "SELECT * FROM companies_events WHERE company_id=".$_POST['company_id']." AND event_id=".$_POST['event_id'];
 		$retval = mysql_query( $sql, $conn );
-		mysql_close($conn);
-		$conn = mysql_connect($server, $username, $password);
-  		mysql_select_db($db);
-		mysql_free_result();
 		$values = mysql_fetch_assoc($results);
 		$num_rows = $values['total'];
+		die($num_rows."is num");
 		if($num_rows==0) {
 			//add record
 			$sql = "INSERT INTO companies_events (company_id, event_id) VALUES (".$_POST['company_id'].", ".$_POST['event_id'].")";
@@ -333,7 +329,9 @@ $response['code'] = 1;
 		//check if record exists
 		$sql = "SELECT * FROM freelancers_events WHERE freelancer_id=".$_POST['freelancer_id']." AND event_id=".$_POST['event_id'];
 		$retval = mysql_query( $sql, $conn );
-		if(!$retval) {
+		$values = mysql_fetch_assoc($results);
+		$num_rows = $values['total'];
+		if($num_rows==0) {
 			//add record
 			$sql = "INSERT INTO freelancers_events (freelancer_id, event_id) VALUES (".$_POST['freelancer_id'].", ".$_POST['event_id'].")";
 			$retval2 = mysql_query( $sql, $conn );
