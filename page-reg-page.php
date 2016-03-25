@@ -504,7 +504,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             success: function (data) {
                     alert('you have successfully registered Yewo');
           window.location = "index.php";        
-          }
+          },
             // if general error
             error: function () {
                 alert('an error has occured');
