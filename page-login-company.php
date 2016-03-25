@@ -325,7 +325,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 // if data is empty
                 if (!data)
                 {
-                    alert('an error has occured');
+                    console.log('an error has occured '+data);
                 }
                 // if data is not empty
                 else {
@@ -339,8 +339,8 @@ License: You must have a valid license purchased only from themeforest (the abov
             },
             // if general error
             error: function(xhr, status, error) {
-              var err = eval("(" + xhr.responseText + ")");
-              alert(err.Message);
+              //var err = eval("(" + xhr.responseText + ")");
+              console.log(err.Message);
             }, async: true
 
         });

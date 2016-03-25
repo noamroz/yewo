@@ -340,7 +340,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 // if data is empty
                 if (!data)
                 {
-                    alert('an error has occured');
+                    console.log('an error has occured '+data);
                 }
                 // if data is not empty
                 else {
@@ -352,7 +352,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             },
             // if general error
             error: function () {
-                alert('an error has occured');
+                console.log('an error has occured');
             }, async: true
 
         });

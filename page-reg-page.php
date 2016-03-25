@@ -507,7 +507,7 @@ License: You must have a valid license purchased only from themeforest (the abov
           },
             // if general error
             error: function () {
-                alert('an error has occured');
+                console.log('an error has occured');
             }, async: true
         });
         }
