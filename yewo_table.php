@@ -1091,7 +1091,7 @@ console.log( "ready!" );
 	}*/
 	var session_id = 1;
 	
-	if( !isset(getParameterByName('company_id')) )//is representative 
+	if( !(getParameterByName('company_id')) )//is representative 
 	{
 		$.ajax({
 			url: 'https://yewo.herokuapp.com/service.php?format=json&method=users&id='+event_id+'&action=2',
@@ -1181,7 +1181,7 @@ $( document ).ready(function() {
 	{
 		return null;
 	}*/
-	if( !isset(getParameterByName('company_id')) )//is company
+	if( !(getParameterByName('company_id')) )//is company
 	{
 		$.ajax({
 		   url: 'https://yewo.herokuapp.com/service.php?format=json&method=events&company_id=2&action=1',
